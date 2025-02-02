@@ -113,3 +113,50 @@
     text-align: center;
     padding: 1rem 0;
   }
+
+
+
+  /* Consultoria*/
+ 
+  .hero {
+    position: relative;
+    background-image: url('images/h1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .opaca {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+  }
+
+  .hero_contenido {
+    position: relative;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    max-width: 1200px;
+  }
+
+  .hero-contenido h1 {
+    font-size: 4rem; 
+    font-weight: bold;
+    margin: 0;
+  }
+
+  /*esto hace que sea responsiva*/
+  @media (max-width: 768px) {
+    .hero-contentido h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  
