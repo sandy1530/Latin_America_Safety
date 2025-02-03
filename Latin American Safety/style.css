@@ -176,43 +176,48 @@
   
   .servicios-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    max-width: 1200px; 
+    margin: 0 auto; 
   }
   
-  .servicio-card {
+  .servicio-imagen {
     background: #fff;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    min-height: 400px;
   }
+
+ 
   
-  .servicio-card img {
+  .servicio-imagen img {
     width: 100%;
     height: 150px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
   }
   
-  .servicio-card h3 {
+  .servicio-imagen h3 {
     color: #333;
     font-size: 1.2rem;
     margin: 0.5rem 0;
   }
   
-  .servicio-card p {
+  .servicio-imagen p {
     font-size: 0.9rem;
     color: #555;
   }
   
-  .servicio-card a {
+  .servicio-imagen a {
     color: #e53935;
     text-decoration: none;
     font-weight: bold;
   }
   
-  .servicio-card:hover {
+  .servicio-imagen:hover {
     transform: translateY(-5px);
   }
   
