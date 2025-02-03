@@ -247,33 +247,119 @@ footer {
   font-size: 30px;
   line-height: 1.2;
   align-self: stretch;
+}
+
+
+  /* Consultoria*/
+ 
+  .hero {
+    position: relative;
+    background-image: url('images/h1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .opaca {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+  }
+
+  .hero_contenido {
+    position: relative;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    max-width: 1200px;
+  }
+
+  .hero-contenido h1 {
+    font-size: 4rem; 
+    font-weight: bold;
+    margin: 0;
+  }
+
+  /*esto hace que sea responsiva*/
+  @media (max-width: 768px) {
+    .hero-contentido h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .servicios {
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
   
-}
-.cursos-online__contenido-2 {
-  color: #ffffff; 
-  font-size: 28px;
-  text-align: left;
-  font-weight: 400;
-  position: relative;
-  list-style-position: inside; 
-  align-self: stretch;
-  border-radius: 50%;
-  flex-shrink: 0;
-  padding-left: 25px;
-}
-.cursos__online__boton{
-  background: #f1b819;
-  color: #ffffff;
-  border-radius: 20px;
-  padding: 20px 38px 20px 38px;
-  gap: 10px;
-  text-align: left;
-  font-family: "MadimiOne-Regular", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 89px;
-  position: relative;
-}
+  .servicios-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .servicios-header h2 {
+    color: #1a237e;
+    font-size: 2rem;
+  }
+  
+  .servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+  
+  .servicio-imagen {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-height: 400px;
+  }
+
+ 
+  
+  .servicio-imagen img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .servicio-imagen h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .servicio-imagen p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .servicio-imagen a {
+    color: #e53935;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .servicio-imagen:hover {
+    transform: translateY(-5px);
+  }
+  
+  @media (max-width: 768px) {
+    .servicios-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+ 
+
+  
