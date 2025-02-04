@@ -6,6 +6,8 @@
   <title>Latin American Safety</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
   <header>
@@ -59,53 +61,84 @@
   </header>
   <section id="inicio">
     <section class="carousel">
-      <article class="slide">
-        <figure class="slide-image">
-          <img src="images/hero1.jpg" alt="Gestión de riesgos laborales" class="image" />
-        </figure>
-        <div class="slide-content">
-          <h2 class="slide-title">GESTIONAMOS</h2>
-          <h3 class="slide-subtitle">RIESGOS LABORALES</h3>
-          <h4 class="slide-subtitle">CON ESTRATEGIA</h4>
-          <p class="slide-description">
-            Desde 2016, ayudamos a empresas, instituciones y comunidades a crear entornos laborales más seguros y sostenibles.
-          </p>
-        </div>
-      </article>
+      <div class="carousel-container">
+        <article class="slide">
+          <figure class="slide-image">
+            <img src="images/hero1.jpg" alt="Gestión de riesgos laborales" class="image" />
+          </figure>
+          <div class="slide-content">
+            <h2 class="slide-title">GESTIONAMOS</h2>
+            <h3 class="slide-subtitle">RIESGOS LABORALES</h3>
+            <h4 class="slide-subtitle">CON ESTRATEGIA</h4>
+            <p class="slide-description">
+              Desde 2016, ayudamos a empresas, instituciones y comunidades a crear entornos laborales más seguros y sostenibles.
+            </p>
+          </div>
+        </article>
     
-      <article class="slide">
-        <figure class="slide-image">
-          <img src="images/certificado-personini2.png" alt="Certificados de seguridad laboral" class="image" />
-        </figure>
-        <div class="slide-content">
-          <h2 class="slide-title">CERTIFICADOS</h2>
-          <p class="slide-description">
-            CERTIFICADOS QUE RESPALDAN<br />
-            TU COMPROMISO CON LA SEGURIDAD<br />
-            Y LA EXCELENCIA LABORAL
-          </p>
-          <button class="slide-button">MAS INFORMACIÓN</button>
-        </div>
-      </article>
+        <article class="slide">
+          <figure class="slide-image">
+            <img src="images/certificado-personini2.png" alt="Certificados de seguridad laboral" class="image" />
+          </figure>
+          <div class="slide-content">
+            <h2 class="slide-title">CERTIFICADOS</h2>
+            <p class="slide-description">
+              CERTIFICADOS QUE RESPALDAN<br />
+              TU COMPROMISO CON LA SEGURIDAD<br />
+              Y LA EXCELENCIA LABORAL
+            </p>
+            <button class="slide-button">MAS INFORMACIÓN</button>
+          </div>
+        </article>
     
-      <article class="slide">
-        <figure class="slide-image">
-          <img src="images/cursosini3.png" alt="Cursos de gestión de riesgos laborales" class="image" />
-        </figure>
-        <div class="slide-content">
-          <h2 class="slide-title">CURSOS</h2>
-          <p class="slide-description">
-            CURSOS ESPECIALIZADOS PARA UNA GESTIÓN EFICIENTE Y SEGURA DE LOS RIESGOS LABORALES
-          </p>
-          <button class="slide-button">MAS INFORMACIÓN</button>
-        </div>
-      </article>
+        <article class="slide">
+          <figure class="slide-image">
+            <img src="images/cursosini3.png" alt="Cursos de gestión de riesgos laborales" class="image" />
+          </figure>
+          <div class="slide-content">
+            <h2 class="slide-title">CURSOS</h2>
+            <p class="slide-description">
+              CURSOS ESPECIALIZADOS PARA UNA GESTIÓN EFICIENTE Y SEGURA DE LOS RIESGOS LABORALES
+            </p>
+            <button class="slide-button">MAS INFORMACIÓN</button>
+          </div>
+        </article>
+      </div>
     </section>
+    <div class="rectangule"></div>
+    <section class="seccion-cursos">
+      <div class="container">
+          <div class="swiper mySwiper">
+            <h2 class="titulo">CURSOS NUEVOS</h2>
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="images/ATMOSFERAS EXPLOSIVAS 1.jpg" alt="Curso 1">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="images/ATMOSFERAS EXPLOSIVAS 1.jpg" alt="Curso 2">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="images/ATMOSFERAS EXPLOSIVAS 1.jpg" alt="Curso 3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/ATMOSFERAS EXPLOSIVAS 1.jpg" alt="Curso 3">
+                </div>
+              </div>
+              <!-- Botones de navegación -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <!-- Paginación -->
+              <div class="swiper-pagination"></div>
+          </div>
+      </div>
+    </section>
+  
 
   </section>
   <footer>
     
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script src="bootstrap/js/bootstrap.min.js" ></script>
    <script src="carousel.js"></script>
 </body>
