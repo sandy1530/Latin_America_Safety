@@ -1,5 +1,6 @@
 
 /* Estilos para la sección de Cursos Online */
+
 .frame-85 {
   display: flex;
   padding: 0px 90px 0px 90px;
@@ -15,6 +16,7 @@
   position: relative;
  
 }
+  
 .cursos-online__contenido {
   flex: 1;
   color: #ffffff;
@@ -154,6 +156,7 @@ body {
     text-decoration: none;
 }
 
+
 .button {
     display: inline-block;
     padding: 10px;
@@ -172,238 +175,5 @@ body {
 }
 
 
-  /* Consultoria*/
- 
-  .hero {
-    position: relative;
-    background-image: url('images/h1.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 200vh; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .opaca {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); 
-  }
-
-  .hero_contenido {
-    position: relative;
-    color: white;
-    text-align: left;
-    padding: 20px;
-    max-width: 1200px;
-  }
-
-  .hero-contenido h1 {
-    font-size: 4rem; 
-    font-weight: bold;
-    margin: 0;
-  }
-
-  /*esto hace que sea responsiva*/
-  @media (max-width: 768px) {
-    .hero-contentido h1 {
-      font-size: 2.5rem;
-    }
-  }
-
-  .servicios {
-    padding: 2rem;
-    background-color: #f9f9f9;
-  }
-  
-  .servicios-header {
-    text-align: left;
-    margin-bottom: 2rem;
-    
-  }
-
-  .Gestion-header
-  {
-    text-align: center;
-  }
-  
-  .servicios-header h2 {
-    color: #1a237e;
-    font-size: 2rem;
-  }
-  
-  .servicios-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
-    max-width: 1200px; 
-    margin: 0 auto; 
-  }
-  
-  .servicio-imagen {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    min-height: 400px;
-  }
-
- 
-  
-  .servicio-imagen img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
-    
-  }
-  
-  .servicio-imagen h3 {
-    color: #333;
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-  }
-  
-  .servicio-imagen p {
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-  .servicio-imagen a {
-    color: #e53935;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .servicio-imagen:hover {
-    transform: translateY(-5px);
-  }
-
-  
-  
-  @media (max-width: 768px) {
-    .servicios-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-
-  .servicios-grid1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    gap: 10rem;
-    max-width: 800px; 
-    margin: 0 auto; 
-  }
-  
-  .servicio-imagen1 {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    min-height: 400px;
-  }
-
-  .servicio-imagen1 img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
-    
-  }
-  
-  .servicio-imagen1 h3 {
-    color: #333;
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-  }
-
-  .servicio-imagen1 a {
-    color: #e53935;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .servicio-imagen1 p {
-
-    font-size: 0.9rem;
-    color: #555;
-  }
-
-  .servicio-imagen1:hover {
-    transform: translateY(-5px);
-  }
-
-  @media (max-width: 768px) {
-    .servicios-grid1 {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .servicios-grid2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    gap: 5rem;
-    max-width: 1200px; 
-    margin: 0 auto; 
-  }
-  
-  .servicio-imagen2 {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    min-height: 400px;
-  }
-
-  .servicio-imagen2 img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
-    
-  }
-  
-  .servicio-imagen2 h3 {
-    color: #333;
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-  }
-
-  .servicio-imagen2 a {
-    color: #e53935;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .servicio-imagen2 p {
-
-    font-size: 0.9rem;
-    color: #555;
-  }
-
-  .servicio-imagen2:hover {
-    transform: translateY(-5px);
-  }
-
-  @media (max-width: 768px) {
-    .servicios-grid1 {
-      grid-template-columns: 1fr;
-    }
-  }
-
-
-
- 
 
   
