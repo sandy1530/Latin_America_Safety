@@ -1,25 +1,31 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.querySelector(".carousel");
+  document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector(".carousel-container");
     const slides = document.querySelectorAll(".slide");
     let currentIndex = 0;
+    const totalSlides = slides.length;
+    const intervalTime = 3000; // 4 segundos
   
-    // Función para mover el carrusel al siguiente slide
     function nextSlide() {
-      currentIndex = (currentIndex + 1) % slides.length; // Avanza al siguiente slide
-      const offset = -currentIndex * 100; // Calcula el desplazamiento
-      carousel.style.transform = `translateX(${offset}%)`; // Aplica el desplazamiento
+      currentIndex = (currentIndex + 1) % totalSlides; // Avanza cíclicamente
+      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
   
-    // Iniciar el carrusel automático
-    let interval = setInterval(nextSlide, 2000); // Cambia de slide cada 5 segundos
+    let autoSlide = setInterval(nextSlide, intervalTime);
   
-    // Opcional: Detener el carrusel cuando el usuario interactúa con él
-    carousel.addEventListener("mouseenter", () => {
-      clearInterval(interval); // Detiene el carrusel
-    });
-  
-    carousel.addEventListener("mouseleave", () => {
-      interval = setInterval(nextSlide, 2000); // Reanuda el carrusel
-    });
+    // Detener auto-slide cuando el usuario interactúa
+    carousel.addEventListener("mouseenter", () => clearInterval(autoSlide));
+    carousel.addEventListener("mouseleave", () => autoSlide = setInterval(nextSlide, intervalTime));
   });
- 
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3, // Número de cursos visibles
+    spaceBetween: 5, // Espacio entre cursos
+    loop: true, // Hacer que sea infinito
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
