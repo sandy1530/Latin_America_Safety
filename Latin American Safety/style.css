@@ -276,12 +276,8 @@ footer {
   align-items: center;
   height: 89px;
 }
-.Imagen1_cursos{
-  flex-shrink: 0;
-  width: 902px;
-  height: 884px;
-  position: relative;
-  object-fit: cover;
+.imagen-cursos{
+ 
 }
 
 /*Tarjeta de cursos */
