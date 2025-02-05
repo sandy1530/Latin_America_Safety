@@ -426,8 +426,14 @@ body {
   }
   
   .servicios-header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 2rem;
+    
+  }
+
+  .Gestion-header
+  {
+    text-align: center;
   }
   
   .servicios-header h2 {
@@ -459,6 +465,7 @@ body {
     height: 150px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
+    
   }
   
   .servicio-imagen h3 {
@@ -481,6 +488,8 @@ body {
   .servicio-imagen:hover {
     transform: translateY(-5px);
   }
+
+  
   
   @media (max-width: 768px) {
     .servicios-grid {
