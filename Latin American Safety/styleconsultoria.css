@@ -213,6 +213,14 @@ font-size: 45px;
     }
   }
 
+  .Espacio {
+ 
+    background-color: #0f2247; 
+    padding: 75px 100px;
+
+
+  }
+
 
   .servicios-grid1 {
     display: grid;
@@ -306,7 +314,7 @@ font-size: 45px;
     font-weight: bold;
   }
 
-  .servicio-imagen2 p {
+  .servicio-imagen2 p {   
 
     font-size: 0.9rem;
     color: #555;
@@ -321,6 +329,9 @@ font-size: 45px;
       grid-template-columns: 1fr;
     }
   }
+
+
+  
 
 
 
