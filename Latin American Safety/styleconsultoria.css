@@ -1,5 +1,5 @@
 
-{
+  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -88,7 +88,7 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    width: 200vh; 
+    width: 201.7vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,15 +125,27 @@
   }
 
   .servicios {
-    padding: 2rem;
+    padding: 0rem;
     background-color: #f9f9f9;
   }
   
   .servicios-header {
+    display: flex;
+    flex-direction: column;
     text-align: left;
-    margin-bottom: 2rem;
-    
-  }
+    justify-content: center;
+    padding: 40px 100px;
+    background-color: #0f2247; 
+    width: 100%;
+    color: white; 
+}
+
+.servicios-header h1 {
+
+font-size: 45px;
+
+
+}
 
   .Gestion-header
   {
