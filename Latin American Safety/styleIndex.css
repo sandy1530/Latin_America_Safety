@@ -202,12 +202,12 @@
     border-radius: 30px;
   }
   /*Bienvenida*/
-  .bienvenida {
+  .contenedor-seccion {
     text-align: center;
     padding: 50px 20px;
   }
   
-  .bienvenida .barra {
+  .contenedor-seccion .barra {
     margin: 10px auto;  /* Centrar horizontalmente */
     border-style: solid;
     border-color: #0b0c4f;
@@ -244,7 +244,162 @@
     max-width: 100%;
     height: auto;
   }
-  
+  /*Ofrecemos*/
+  .carrusel-container {
+    width: 100%;
+    overflow: hidden; /* Oculta los elementos que no caben */
+    display: flex;
+    justify-content: center;
+  }
+  .carrusel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    white-space: nowrap;
+    scrollbar-width: none; /* Oculta scrollbar en Firefox */
+    -ms-overflow-style: none; /* Oculta scrollbar en IE/Edge */
+}
+
+/* Oculta scrollbar en Chrome/Safari */
+.carrusel::-webkit-scrollbar {
+    display: none;
+}
+
+.item {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Imagen de fondo */
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Capa oscura sobre la imagen */
+.item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);  /* Ajusta la opacidad aquí */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Texto centrado */
+.item p {
+  z-index: 2;  /* Asegura que el texto esté sobre la capa oscura */
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
+  word-wrap: break-word;
+  white-space: normal;
+}
+/*Sectores a los que nos dirigimos*/
+
+
+
+  /*Contactanos*/
+  .contactanos {
+    text-align: center;
+    padding: 0;
+}
+
+.contactanos-header {
+    background: url('images/contactoimage.png') no-repeat center center/cover;
+    padding: 80px 20px;
+    color: white;
+    position: relative;
+}
+
+.contactanos-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.contactanos-header p {
+    font-size: 18px;
+}
+
+.formulario-contacto {
+    background: white;
+    padding: 30px;
+    max-width: 600px;
+    margin: -30px auto 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.fila {
+    display: flex;
+    gap: 15px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.campo textarea {
+    height: 100px;
+    resize: none;
+}
+
+.boton-enviar {
+    background-color: #c39800;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+.boton-enviar:hover {
+    background-color: #a38000;
+}
+
+@media (max-width: 600px) {
+    .fila {
+        flex-direction: column;
+    }
+}
+
 
 
 
