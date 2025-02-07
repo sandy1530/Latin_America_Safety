@@ -1,9 +1,81 @@
+/* Estilos para la sección de Cursos Online */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #0f2247;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.logo {
+  max-width: 150px;
+}
+.logo img{
+  max-width: 100%;
+  height: auto;
+}
+nav{
+  display: flex;
+  gap:25
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16 px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3;
+}
+nav a:hover{
+  background: rgba(255,255,255, 0.2);
+  border-radius: 5px;
+}
+/*---Estilo del Submenú---*/
+.dropdown{
+  position: relative;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  width: 200px;
+}
+.dropdown-content a{
+  color: black;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+}
+.dropdown-content a:hover{
+  background: #f5f5f5;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+footer {
+  background: #0f2247;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
 :root {
   --color-primario: #f1b819;
   --color-secundario: #ffffff;
   --color-fondo: #121474;
   --fuente-principal: 'Montserrat', sans-serif;
 }
+
+
 
 /* Estilos para la sección de cursos */
 .cursos-container {
@@ -15,7 +87,7 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  min-height: 600px; 
+  min-height: 600px;
 }
 
 .cursos-texto {
@@ -39,10 +111,6 @@
   color: var(--color-primario);
 }
 
-.online {
-  color: var(--color-primario);
-}
-
 .cursos-online__contenido {
   font-size: 18px;
   margin-bottom: 15px;
@@ -62,7 +130,7 @@
 }
 
 .cursos__online__boton {
-  background: #f1b819;
+  background: var(--color-primario);
   border-radius: 20px;
   padding: 15px 30px;
   color: #ffffff;
@@ -72,7 +140,7 @@
   text-align: center;
   display: block;
   width: fit-content;
-  margin-left: auto; /
+  margin-left: auto; /* Alineado a la derecha */
 }
 
 .cursos-imagen {
@@ -82,12 +150,94 @@
 .cursos-imagen img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-}
-.cursos-container {
-  margin-bottom: 50px; 
+  object-fit: cover;
 }
 
+/* Espaciado entre cursos y tarjetas */
+.separador {
+  height: 50px; /* Ajusta según el espacio deseado */
+}
+
+/* Estilos de Tarjetas de Cursos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--color-secundario);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.card {
+  background: var(--color-secundario);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  width: 90%;
+  background: #3400ff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.button:hover {
+  background: #2200b3;
+}
+.cursos-container {
+  margin-bottom: 50px; /* Ajusta el valor según el espacio deseado */
+}
 /*Tarjeta de cursos */
 * {
     margin: 0;
