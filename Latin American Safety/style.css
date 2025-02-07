@@ -1,6 +1,11 @@
 
 /* Estilos para la sección de Cursos Online */
-
+:root{
+  --color-primario:#f1b819;
+  --color-secundario:#f5f5f5;
+  --fuente-monserrat:'Montserrat',sans serif;
+  --fuente-krona:'Krona',sans serif;
+}
 .frame-85 {
   display: flex;
   padding: 0px 90px 0px 90px;
@@ -19,10 +24,10 @@
   
 .cursos-online__contenido {
   flex: 1;
-  color: #ffffff;
+  color: var(--color-secundario);
 }
 .presentacion-contenido__titulo{
-  color: #f1b819;
+  color: var(--color-primario);
   text-align: left;
   font-family: "-", sans-serif;
   font-size: 90px;
@@ -31,14 +36,14 @@
   line-height: 1.1;
 }
 .aprende{
-  color: #f1b819;
+  color: var(--color-primario);
   font-family: "MontaguSlab-SemiBold", sans-serif;
   font-size: 90px;
   font-weight: 600;
   display: inline-block;
 }
 .online{
-  color: #f1b819;
+  color:var(--color-primario);
   font-family: "Wendy One", sans-serif;
   font-size: 90px;
   font-weight: 400;
@@ -53,7 +58,7 @@
   
 }
 .cursos-online__contenido-2 {
-  color: #ffffff; 
+  color: var(--color-secundario); 
   font-size: 28px;
   text-align: left;
   font-weight: 400;
@@ -65,8 +70,8 @@
   padding-left: 25px;
 }
 .cursos__online__boton{
-  background: #f1b819;
-  color: #ffffff;
+  background:var(--color-primario);
+  color: var(--color-secundario);
   border-radius: 20px;
   padding: 20px 38px 20px 38px;
   gap: 10px;
@@ -90,7 +95,7 @@
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: var(--color-secundario);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +113,7 @@ body {
 }
 
 .card {
-    background: white;
+    background: var(--color-secundario);
     border-radius: 10px;
     overflow: hidden;
     width: 280px;
@@ -156,7 +161,7 @@ body {
     padding: 10px;
     width: 90%;
     background: #3400ff;
-    color: white;
+    color: var(col);
     text-decoration: none;
     font-size: 14px;
     border-radius: 5px;
@@ -168,7 +173,67 @@ body {
     background: #2200b3;
 }
 /*Gestion de operaciones*/
+/* Variables de color */
+:root {
+  --color-primario: #f1b819;
+  --color-secundario: #f5f5f5;
+  --fuente-monserrat: 'Montserrat', sans-serif;
+  --fuente-krona: 'Krona', sans-serif;
+}
 
+/* Estilos Generales */
+body {
+  background-color: var(--color-secundario);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+}
 
+/* Sección de servicios */
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
 
-  
+.tipos__de__servicios {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.tipos__de__servicios h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.tipos__de__servicios p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Botón */
+.button {
+  background: #3400ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+}
+
+.button:hover {
+  background: #2200b3;
+}
+
