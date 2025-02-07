@@ -334,15 +334,17 @@ font-size: 45px;
 
    
 
-   .Mas-informacion {
-  background-color: #ffffff;
-  text-align: left;
-  padding: 100px 100px;
-  margin: 50px auto;
-  
-  max-width: 1000px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+  .Mas-informacion {
+    background-color: #ffffff;
+    text-align: left;
+    padding: 100px;
+    margin: 50px auto;
+    margin-bottom: 100px;
+    max-width: 1000px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    position: relative; 
+  }
 
 .Mas-informacion h1 {
   font-size: 2rem;
@@ -365,21 +367,19 @@ font-size: 45px;
 }
 
 .Mas-informacion .btn-evaluacion {
-  display: inline-block;
+  position: absolute;
+  bottom: 20px; 
+  right: 20px; 
+  
   background-color: #E13A3A;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
-  margin-left: 600px;
-  
   transition: background-color 0.3s ease;
 }
 
 .Mas-informacion .btn-evaluacion:hover {
-  background-color: #E13A3A;
+  background-color: #C53030;
 }
-
 
   
