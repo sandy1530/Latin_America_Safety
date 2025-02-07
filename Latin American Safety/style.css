@@ -1,5 +1,77 @@
 
 /* Estilos para la sección de Cursos Online */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #0f2247;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.logo {
+  max-width: 150px;
+}
+.logo img{
+  max-width: 100%;
+  height: auto;
+}
+nav{
+  display: flex;
+  gap:25
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16 px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3;
+}
+nav a:hover{
+  background: rgba(255,255,255, 0.2);
+  border-radius: 5px;
+}
+/*---Estilo del Submenú---*/
+.dropdown{
+  position: relative;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  width: 200px;
+}
+.dropdown-content a{
+  color: black;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+}
+.dropdown-content a:hover{
+  background: #f5f5f5;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+footer {
+  background: #0f2247;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+
+
 :root{
   --color-primario:#f1b819;
   --color-secundario:#f5f5f5;
