@@ -1,93 +1,252 @@
-
 /* Estilos para la sección de Cursos Online */
 
+<<<<<<< HEAD
 
 :root{
   --color-primario:#f1b819;
   --color-secundario:#f5f5f5;
   --fuente-monserrat:'Montserrat',sans serif;
   --fuente-krona:'Krona',sans serif;
-}
-.frame-85 {
-  display: flex;
-  padding: 0px 90px 0px 90px;
-  flex-direction: column;
-  align-items: center; 
-  background-color: #121474;
-  padding: 32px;
-  width: 756px;
-  display: flex;
-  gap: 36px;
-  align-items: flex-end;
-  justify-content: flex-start;
-  position: relative;
- 
-}
-  
-.cursos-online__contenido {
-  flex: 1;
-  color: var(--color-secundario);
-}
-.presentacion-contenido__titulo{
-  color: var(--color-primario);
-  text-align: left;
-  font-family: "-", sans-serif;
-  font-size: 90px;
-  font-weight: 400;
-  position: relative;
-  line-height: 1.1;
-}
-.aprende{
-  color: var(--color-primario);
-  font-family: "MontaguSlab-SemiBold", sans-serif;
-  font-size: 90px;
-  font-weight: 600;
-  display: inline-block;
-}
-.online{
-  color:var(--color-primario);
-  font-family: "Wendy One", sans-serif;
-  font-size: 90px;
-  font-weight: 400;
-  display: inline-block;
-}
-.cursos-online__contenido{
-  color: #ffffff;
-  font-family: "Mada-Regular", sans-serif;
-  font-size: 30px;
-  line-height: 1.2;
-  align-self: stretch;
-  
-}
-.cursos-online__contenido-2 {
-  color: var(--color-secundario); 
-  font-size: 28px;
-  text-align: left;
-  font-weight: 400;
-  position: relative;
-  list-style-position: inside; 
-  align-self: stretch;
-  border-radius: 50%;
-  flex-shrink: 0;
-  padding-left: 25px;
-}
-.cursos__online__boton{
-  background:var(--color-primario);
-  color: var(--color-secundario);
-  border-radius: 20px;
-  padding: 20px 38px 20px 38px;
-  gap: 10px;
-  text-align: left;
-  font-family: "MadimiOne-Regular", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  position: relative;
+=======
+header {
   display: flex;
   align-items: center;
-  height: 89px;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #0f2247;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.logo {
+  max-width: 150px;
+}
+.logo img{
+  max-width: 100%;
+  height: auto;
+}
+nav{
+  display: flex;
+  gap:25
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16 px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3;
+}
+nav a:hover{
+  background: rgba(255,255,255, 0.2);
+  border-radius: 5px;
+}
+/*---Estilo del Submenú---*/
+.dropdown{
+  position: relative;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  width: 200px;
+}
+.dropdown-content a{
+  color: black;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+}
+.dropdown-content a:hover{
+  background: #f5f5f5;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+footer {
+  background: #0f2247;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+:root {
+  --color-primario: #f1b819;
+  --color-secundario: #ffffff;
+  --color-fondo: #121474;
+  --fuente-principal: 'Montserrat', sans-serif;
+>>>>>>> cffaeb3d132b278c95550e0e44732dd44148489e
 }
 
 
+
+/* Estilos para la sección de cursos */
+.cursos-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  min-height: 600px;
+}
+
+.cursos-texto {
+  flex: 1;
+  background-color: var(--color-fondo);
+  color: var(--color-secundario);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.presentacion-contenido__titulo {
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.aprende {
+  color: var(--color-primario);
+}
+
+.cursos-online__contenido {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.cursos-online__contenido-2 {
+  font-size: 18px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.cursos-online__contenido-2 li::before {
+  content: "• ";
+  color: var(--color-primario);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cursos__online__boton {
+  background: var(--color-primario);
+  border-radius: 20px;
+  padding: 15px 30px;
+  color: #ffffff;
+  font-family: "MadimiOne-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin-left: auto; /* Alineado a la derecha */
+}
+
+.cursos-imagen {
+  flex: 1;
+}
+
+.cursos-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Espaciado entre cursos y tarjetas */
+.separador {
+  height: 50px; /* Ajusta según el espacio deseado */
+}
+
+/* Estilos de Tarjetas de Cursos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--color-secundario);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.card {
+  background: var(--color-secundario);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  width: 90%;
+  background: #3400ff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.button:hover {
+  background: #2200b3;
+}
+.cursos-container {
+  margin-bottom: 50px; /* Ajusta el valor según el espacio deseado */
+}
 /*Tarjeta de cursos */
 * {
     margin: 0;
