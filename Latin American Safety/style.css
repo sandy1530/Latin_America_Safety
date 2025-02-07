@@ -326,11 +326,6 @@ body {
 }
 
 /*Gestion de operaciones*/
-:root {
-  --color-primario: #f1b819;
-  --color-secundario: #f5f5f5;
-  --fuente-principal: 'Montserrat', sans-serif;
-}
 
 body {
   background-color: var(--color-secundario);
