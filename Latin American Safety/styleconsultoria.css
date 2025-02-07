@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  
   body {
     font-family: 'Arial', sans-serif;
     line-height: 2;
@@ -330,9 +332,54 @@ font-size: 45px;
     }
   }
 
+   
+
+   .Mas-informacion {
+  background-color: #ffffff;
+  text-align: left;
+  padding: 100px 100px;
+  margin: 50px auto;
+  
+  max-width: 1000px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Mas-informacion h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.Mas-informacion .linea {
+  height: 4px;
+  width: 80px;
+  background-color: #007bff;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.Mas-informacion p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.Mas-informacion .btn-evaluacion {
+  display: inline-block;
+  background-color: #E13A3A;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 600px;
+  
+  transition: background-color 0.3s ease;
+}
+
+.Mas-informacion .btn-evaluacion:hover {
+  background-color: #E13A3A;
+}
+
 
   
-
-
-
- 
