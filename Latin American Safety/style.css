@@ -1,5 +1,13 @@
 /* Estilos para la sección de Cursos Online */
 
+<<<<<<< HEAD
+
+:root{
+  --color-primario:#f1b819;
+  --color-secundario:#f5f5f5;
+  --fuente-monserrat:'Montserrat',sans serif;
+  --fuente-krona:'Krona',sans serif;
+=======
 header {
   display: flex;
   align-items: center;
@@ -73,6 +81,7 @@ footer {
   --color-secundario: #ffffff;
   --color-fondo: #121474;
   --fuente-principal: 'Montserrat', sans-serif;
+>>>>>>> cffaeb3d132b278c95550e0e44732dd44148489e
 }
 
 
