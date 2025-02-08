@@ -108,12 +108,17 @@ footer {
 .presentacion-contenido__titulo {
   font-size: 55px;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 2.5;
   text-align: left;
 }
 
 .aprende {
   color: var(--color-primario);
+  font-family: "Montagu Slab", sans-serif;
+}
+.online {
+  color: var(--color-primario);
+  font-family: "Wendy One", sans-serif;
 }
 
 .cursos-online__contenido {
@@ -124,9 +129,8 @@ footer {
 .cursos-online__contenido-2 {
   font-size: 18px;
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 3;
 }
-
 .cursos-online__contenido-2 li::before {
   content: "• ";
   color: var(--color-primario);
@@ -160,88 +164,7 @@ footer {
 
 /* Espaciado entre cursos y tarjetas */
 .separador {
-  height: 50px; /* Ajusta según el espacio deseado */
-}
-
-/* Estilos de Tarjetas de Cursos */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background-color: var(--color-secundario);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  max-width: 1200px;
-}
-
-.card {
-  background: var(--color-secundario);
-  border-radius: 10px;
-  overflow: hidden;
-  width: 280px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 15px;
-}
-
-.card h3 {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px;
-  width: 90%;
-  background: #3400ff;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 14px;
-  border-radius: 5px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-.button:hover {
-  background: #2200b3;
-}
-.cursos-container {
-  margin-bottom: 50px; /* Ajusta el valor según el espacio deseado */
+  height: 50px; 
 }
 /*Tarjeta de cursos */
 * {
@@ -265,8 +188,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     gap: 20px;
-    max-width: 1200px;
+    max-width: 900px;
 }
 
 .card {
@@ -274,9 +198,13 @@ body {
     border-radius: 10px;
     overflow: hidden;
     width: 280px;
+    height: 420px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card:hover {
@@ -290,7 +218,14 @@ body {
 }
 
 .card-content {
-    padding: 15px;
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    text-align: left;
+    
 }
 
 .card h3 {
@@ -303,13 +238,16 @@ body {
     font-size: 14px;
     color: #666;
     margin-bottom: 10px;
+    flex-grow: 1;
 }
 
-.content-link {
+.contenido_2 {
     color: #d63384;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
+    text-align: left;
+
 }
 
 
@@ -328,7 +266,12 @@ body {
 
 .button:hover {
     background: #2200b3;
+    
 }
+.container{
+  color: #22238A;
+}
+
 
 /*Gestion de operaciones*/
 
