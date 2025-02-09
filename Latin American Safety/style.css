@@ -264,13 +264,20 @@ body {
     margin-top: 10px;
 }
 
-.button:hover {
-    background: #2200b3;
-    
-}
 .container{
   color: #22238A;
+  font-family: "Bebas Neue", sans-serif;
 }
+.imagen_certificacion{
+  display: grid;
+  grid-template-columns: 100px auto;
+  align-items: center;
+  width: 100px;
+  height: auto;
+
+}
+
+
 
 
 /*Gestion de operaciones*/
