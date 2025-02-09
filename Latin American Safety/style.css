@@ -268,19 +268,27 @@ body {
   color: #22238A;
   font-family: "Bebas Neue", sans-serif;
 }
-.imagen_certificacion{
-  display: grid;
-  grid-template-columns: 100px auto;
-  align-items: center;
-  width: 100px;
-  height: auto;
-
+/*Certificacion*/
+.separador {
+  height: 50px; 
+} 
+.contenedor_certificacion {
+  position: relative; 
+  padding-left: 50px; 
+}
+.imagen-certificacion {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 40px; 
+  height: auto; 
 }
 
+h3, .button {
+  position: relative; 
+  z-index: 1; 
+}
 
-
-
-/*Gestion de operaciones*/
 
 body {
   background-color: var(--color-secundario);
