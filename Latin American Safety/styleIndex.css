@@ -242,13 +242,23 @@
     height: auto;
   }
   /*Ofrecemos*/
-  .carrusel-container {
-    width: 100%;
-    overflow: hidden; /* Oculta los elementos que no caben */
+  .container-buttons {
     display: flex;
     justify-content: center;
-  }
-  .carrusel {
+    align-items: center;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.carrusel-container {
+    width: 100%;
+    max-width: 880px;
+    overflow: hidden; /* Oculta elementos fuera del carrusel */
+    display: flex;
+    justify-content: center;
+}
+
+.carrusel {
     display: flex;
     gap: 20px;
     overflow-x: auto;
@@ -265,52 +275,96 @@
 }
 
 .item {
-  flex: 0 0 auto;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    flex: 0 0 25%; /* Hace que 4 elementos quepan en pantalla grande */
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;/* Hace que el div sea clickeable */
 }
 
 /* Imagen de fondo */
 .item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
 /* Capa oscura sobre la imagen */
 .item::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);  /* Ajusta la opacidad aquí */
-  border-radius: 50%;
-  z-index: 1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
+    border-radius: 50%;
+    z-index: 1;
 }
 
 /* Texto centrado */
 .item p {
-  z-index: 2;  /* Asegura que el texto esté sobre la capa oscura */
+    z-index: 2; /* Asegura que el texto esté sobre la capa oscura */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/* Botones como items */
+.boton-circular {
+    width: 200px;
+    height: 200px;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-circular:hover {
+    transform: scale(1.1);
+}
+/* Ajustes para tablets y móviles */
+@media (max-width: 1024px) {
+  .item {
+      flex: 0 0 33.33%; /* 3 elementos visibles en tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+      flex: 0 0 50%; /* 2 elementos visibles en móviles medianos */
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+      flex: 0 0 100%; /* 1 elemento visible en móviles pequeños */
+  }
+}
+/*Sectores a los que nos dirigimos*/
+.item p {
+  z-index: 2; /* Asegura que el texto esté sobre la capa oscura */
   color: white;
-  font-size: 23px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
   width: 80%;
   word-wrap: break-word;
   white-space: normal;
 }
-/*Sectores a los que nos dirigimos*/
 /*Trabajamos con estándares mundiales*/
 .estandares {
   text-align: center;
@@ -374,7 +428,7 @@
     background: white;
     padding: 30px;
     max-width: 600px;
-    margin: -30px auto 0;
+    margin: 0px auto 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
