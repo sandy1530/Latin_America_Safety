@@ -34,10 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const carrusel = document.getElementById("carrusel");
 
   carrusel.addEventListener("wheel", (event) => {
-    event.preventDefault();
-    const scrollAmount = 300; // Controla cuánto se mueve con el scroll
-    carrusel.scrollLeft += event.deltaY > 0 ? scrollAmount : -scrollAmount;
+      event.preventDefault();
+      const scrollAmount = 300; // Controla cuánto se mueve con el scroll
+      carrusel.scrollLeft += event.deltaY > 0 ? scrollAmount : -scrollAmount;
   });
 });
+
 
 
