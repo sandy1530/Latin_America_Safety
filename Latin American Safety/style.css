@@ -389,6 +389,8 @@ body {
   background: #2200b3;
 }
 /* ESTILOS RECURSOS */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -401,6 +403,7 @@ body {
   font-family: Arial, sans-serif;
   padding-top: 50px;
 }
+
 
 .recursos {
   display: flex;
