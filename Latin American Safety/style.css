@@ -389,6 +389,8 @@ body {
   background: #2200b3;
 }
 /* ESTILOS RECURSOS */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -401,6 +403,7 @@ body {
   font-family: Arial, sans-serif;
   padding-top: 50px;
 }
+
 
 .recursos {
   display: flex;
@@ -442,4 +445,37 @@ video {
   max-width: 700px;
   border-radius: 10px;
   margin-left: 20px; 
+}
+/**ikigai*/
+
+.ikigai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  text-align: center;
+  position: relative;
+}
+
+.contenido_ikigai {
+  position: relative;
+  display: inline-block;
+}
+
+.contenido_ikigai h5 {
+  position: absolute;
+  top: -50px; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+.contenido_ikigai img {
+  width: 700px;  
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
 }
