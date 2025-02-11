@@ -355,16 +355,7 @@
   }
 }
 /*Sectores a los que nos dirigimos*/
-.item p {
-  z-index: 2; /* Asegura que el texto esté sobre la capa oscura */
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  width: 80%;
-  word-wrap: break-word;
-  white-space: normal;
-}
+
 /*Trabajamos con estándares mundiales*/
 .estandares {
   text-align: center;

@@ -39,6 +39,30 @@ document.addEventListener("DOMContentLoaded", function () {
       carrusel.scrollLeft += event.deltaY > 0 ? scrollAmount : -scrollAmount;
   });
 });
+//Enviar mensaje de WhatsApp
+function enviarWhatsApp() {
+  // Obtener valores del formulario
+  let nombre = document.getElementById("nombre").value;
+  let email = document.getElementById("email").value;
+  let telefono = document.getElementById("telefono").value || "No proporcionado";
+  let consulta = document.getElementById("consulta").value;
 
+  // Número de WhatsApp de la empresa 
+  let numeroWhatsApp = "933611593";  
+
+  // Crear el mensaje
+  let mensaje = `Hola, quiero hacer una consulta: %0A%0A` +
+                `👤 *Nombre:* ${nombre} %0A` +
+                `📧 *Email:* ${email} %0A` +
+                `📞 *Teléfono:* ${telefono} %0A` +
+                `💬 *Consulta:* ${consulta} %0A%0A` +
+                `¡Gracias!`;
+
+  // Generar el enlace de WhatsApp
+  let url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
+
+  // Abrir WhatsApp
+  window.open(url, "_blank");
+}
 
 
