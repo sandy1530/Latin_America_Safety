@@ -303,99 +303,191 @@ body {
   height: auto; 
 }
 
-  /*Footer*/
-/* General Styles */
-footer {
-  background-color: #0f2247;
-  color: white;
-  padding: 20px 0;
-  font-family: Arial, sans-serif;
+h3, .button {
+  position: relative; 
+  z-index: 1; 
 }
-
-.footer-container {
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-/* Logo y Secciones */
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-
-.footer-logo img {
-  max-width: 150px;
-}
-
-/* Secciones */
-.footer-links {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.footer-links .column h4 {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.footer-links ul {
-  list-style: none;
+body {
+  background-color: var(--color-secundario);
+  font-family: var(--fuente-principal);
+  margin: 0;
   padding: 0;
 }
-
-.footer-links li {
-  margin-bottom: 8px;
+.contenedor {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: auto;
 }
-
-.footer-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
+.texto {
+  flex: 1;
+  max-width: 70%;
 }
-
-.footer-links a:hover {
-  text-decoration: underline;
+.contenedor h1 {
+  font-size: 3rem;
+  color: var(--color-secundario);
+  transform: translate(-0, -70%);
+  display: flex;
+  height: 100vh;
+  text-align: center; 
+  
 }
-
-/* Redes Sociales */
-.footer-social {
+.contenedor img {
+  max-width: 100%; 
+  display: block;
+}
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: auto auto; 
+  gap: 30px; 
+  justify-content: center;
+  align-items: center;
+}
+.tarjeta:nth-child(3) {
+  grid-column: span 2; 
+  justify-self: center;
+}
+.tarjeta {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 40px;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  margin: 20px 0;
+  width: 300px; /* Ancho fijo */
+  height: 250px;
+  transition: transform 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+/*Cuando se pasa por la img tiene movimiento*/
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+.tarjeta p {
+  font-size: 0.9rem;
+  color: #000000;
 }
 
-.footer-social .line {
-  border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin: 10px 0;
+
+/*Contenido_titulo*/
+.tarjeta h2{
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  top: 30%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Asegura que el texto esté sobre la imagen */
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.social-icons {
+/* Botón */
+.button_c {
+  background: #3400ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 60%;
+  margin-top: 0%;
+}
+.button_c:hover {
+  background: #2200b3;
+}
+
+/*Estilo de Recursos*/
+
+/* ESTILOS RECURSOS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black !important; 
+  color: white;
+  font-family: Arial, sans-serif;
+  padding-top: 50px;
+}
+
+.recursos {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px; 
+  padding: 50px 0;
+}
+.contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 40px; 
+}
+.contenido-texto {
+  width: 35%;
+  text-align: left;
+}
+.contenido-texto p {
+  color: #000000;
 }
 
-.social-icons a img {
-  width: 25px;
-  height: 25px;
+.titulo {
+  color: #c59100;
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.contenido-video {
+  width: 55%;
 }
 
-/* Copyright */
-.footer-bottom {
-  text-align: right;
-  font-size: 12px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  padding-top: 10px;
+video {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  margin-left: 20px; 
+}
+/**ikigai*/
+
+.ikigai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  text-align: center;
+  position: relative;
 }
 
+.contenido_ikigai {
+  position: relative;
+  display: inline-block;
+}
 
-
-
-
-
-
-
+.contenido_ikigai h5 {
+  position: absolute;
+  top: -50px; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+.contenido_ikigai img {
+  width: 700px;  
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
