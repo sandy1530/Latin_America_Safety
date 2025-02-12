@@ -46,3 +46,12 @@ function cerrarFormulario() {
 }
 
 
+function desplazarASeccion(id) {
+    let seccion = document.getElementById(id);
+    if (seccion) {
+        window.scrollTo({
+            top: seccion.offsetTop - 140,
+            behavior: "smooth"
+        });
+    }
+}
