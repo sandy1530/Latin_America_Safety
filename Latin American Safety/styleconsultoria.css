@@ -335,6 +335,24 @@
             }
         }
 
+        #form-container {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .Mas-informacion {
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .Mas-informacion.hidden {
+            opacity: 0;
+        }
+        
+        #form-container.visible {
+            display: block; 
+            opacity: 1;
+        }
         
 
         .Mas-informacion {
@@ -384,8 +402,88 @@
         .Mas-informacion .btn-evaluacion:hover {
         background-color: #C53030;
         }
+        
+        .formulario-contacto {
+            background-color: #0f2247; 
+            color: white;
+            padding: 20px;
+            max-width: 1600px; 
+            width: 100%; 
+            margin: 50px auto;
+            border-radius: 10px; 
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+            position: relative;
+            display: none; 
+        }
+        
+        
+        .formulario-contacto h2 {
+            text-align: center;
+        }
+        
+      
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        
+        .input-container {
+            display: flex;
+            gap: 15px;
+        }
+        
+        
+        .input-box {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+       
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1); 
+            color: white;
+            font-size: 16px;
+            outline: none;
+        }
+        
+        textarea {
+            height: 100px;
+        }
+        
+       
+        .submit-btn {
+           
+            width: 100%;
+            background-color: red;
+            color: white;
+            padding: 12px;
+          
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background-color: #cc0000;
+        }
+        
 
-        /*Footer*/
+/*Footer*/
 /* General Styles */
 footer {
     background-color: #0f2247;
