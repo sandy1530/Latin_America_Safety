@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px 30px;
-    background-color: #0f2247;
+    background-color: #08094f;
     position: fixed;
     top:0;
     left: 0;
@@ -154,7 +154,7 @@
     position: relative;
   }
   .seccion-cursos {
-    background-color: #0A0A5A; /* Azul oscuro */
+    background-color: #08094f; /* Azul oscuro */
     padding: 40px 0; /* Espacio arriba y abajo */
   }
   
@@ -478,7 +478,7 @@
 /*Footer*/
 /* General Styles */
 footer {
-  background-color: #0f2247;
+  background-color: #08094f;
   color: white;
   padding: 20px 0;
   font-family: Arial, sans-serif;
