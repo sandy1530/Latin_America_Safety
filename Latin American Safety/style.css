@@ -136,7 +136,7 @@ footer {
 .cursos-online__contenido-2 {
   font-size: 18px;
   list-style-type: none;
-  padding-left: 3;
+  padding-left: 3px;
 }
 .cursos-online__contenido-2 li::before {
   content: "• ";
@@ -229,6 +229,7 @@ body {
     flex-grow: 1;
     justify-content: space-between;
     text-align: left;
+    
     
 }
 
