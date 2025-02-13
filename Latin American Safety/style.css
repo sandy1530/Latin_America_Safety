@@ -285,6 +285,99 @@ body {
   display: flex;
   justify-content: center; 
 }
+/* Formulario  */
+.Form_contenido {
+  background: linear-gradient(to bottom, #6a11cb, #2575fc); /* Aplicado solo al formulario */
+  padding: 20px;
+  border-radius: 15px;
+  width: 350px;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Asegurar que el formulario aparece correctamente */
+.ForCursos {
+  display: none;  /* Se mostrará solo cuando se active con JS */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+/* Título */
+.Form_contenido h2 {
+  margin-bottom: 15px;
+  font-size: 18px; 
+}
+
+/* Campos de entrada */
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input,
+.Form_contenido input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 0%;
+}
+
+.checkbox label {
+  font-size: 12px;
+}
+.checkbox a {
+  color: #ffeb3b;
+  text-decoration: none;
+  text-align: justify;
+}
+
+/* Botón */
+.Form_contenido button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.Form_contenido button:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+.Cerrar__formulario {
+  font-size: 30px;  
+  font-weight: bold; 
+  cursor: pointer;   
+}
+
+
 /*Certificacion*/
 .separador {
   height: 50px; 
