@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="styleconsultoria.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="script.js" defer></script>
-   
-</head>
+</head> 
 <body>
   <header>
     <div class="logo">
@@ -30,11 +29,11 @@
       <div class="dropdown">
         <a href="Consultoria.html">Consultoria</a>
         <div class="dropdown-content">
-          <a href="#">Gestión estratégica de riesgos</a>
-          <a href="#">Seguridad de Procesos</a>
-          <a href="#">Consultoría ambiental</a>
+            <a onclick="desplazarASeccion('Gestion-header')">Gestión estratégica de riesgos</a>
+            <a onclick="desplazarASeccion('Seguridad-header')">Seguridad de Procesos</a>
+            <a onclick="desplazarASeccion('Consultoria-header')">Consultoría ambiental</a>
         </div>
-      </div>
+    </div>
       <div class="dropdown">
         <a href="cursosOnline.html">Cursos Online</a>
         <div class="dropdown-content">
@@ -77,10 +76,10 @@
       </div>
       <br><br>
 
-      <div class="Gestion-header">
-        <h2>Gestión estratégica de riesgos</h2>
-      </div>
-      <hr><br><br>
+        <div class="Gestion-header" id="Gestion-header">
+          <h2>Gestión estratégica de riesgos</h2>
+        </div>
+        <hr><br><br>
      
       <div class="servicios-grid">
         <div class="servicio-imagen">
@@ -88,7 +87,7 @@
           <br>
           <h3>AGROINDUSTRIA</h3>
           <p>Adaptación de soluciones a las necesidades específicas del sector agroindustrial, abordando riesgos relacionados con el uso de maquinaria, el manejo de sustancias químicas y las condiciones ambientales particulares.</p>
-          <a href="#">+ Leer más</a>
+          <a href="Agroindustria.html">+ Leer más</a>
         </div>
     
         <div class="servicio-imagen">
@@ -138,7 +137,7 @@
       </div>
       <br><br><br>
 
-      <br><div class="Gestion-header">
+      <br><div class="Gestion-header" id="Seguridad-header">
         <h2>Seguridad de Procesos</h2>
       </div><hr>  
       <br><br>
@@ -170,7 +169,7 @@
 
 
 
-      <br><div class="Gestion-header">
+      <br><div class="Gestion-header" id="Consultoria-header">
         <h2>Consultoría ambiental</h2>
       </div><hr>  
       <br><br>
@@ -201,6 +200,7 @@
         <br>
 
       </section>
+      
 
      <div class="Mas-informacion">
           <h1>¿DESEA MÁS INFORMACIÓN?</h1>
@@ -209,12 +209,57 @@
           <p>Contáctenos hoy y descubra cómo podemos aportar valor a su empresa.</p>
           <a href="#" class="btn-evaluacion">Evaluación gratuita</a>
 
-       </div>
+      </div>
+
+      <div class="formulario-contacto" id="form-container" style="display: none;">
+        <button class="close-btn" onclick="cerrarFormulario()">✕</button>
+        <h2>Queremos ayudarle</h2>
+        <form id="contact-form">
+            <div class="input-container">
+                <div class="input-box">
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="input-box">
+                    <label for="apellido">Apellido *</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+            </div>
     
+            <div class="input-box">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="input-box">
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto">
+            </div>
+    
+            <div class="input-box">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+    
+            <div class="input-box">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion">
+            </div>
+    
+            <div class="input-box">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <br>
+            <button type="submit" class="submit-btn">Enviar</button>
+            <br><br><br>
+        </form>
+    </div>
+
   
-
-
-
+    
+   
+    
   </section>
   <footer>
     <div class="footer-container">
