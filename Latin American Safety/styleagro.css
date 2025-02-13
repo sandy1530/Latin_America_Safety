@@ -66,5 +66,83 @@ footer {
     padding: 1rem 0;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    background: #2e7d32;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.seccion {
+    padding: 40px;
+    text-align: center;
+    
+}
+.seccion img {
+
+    position: relative;
+    padding: 50px;
+    right: 500px;
+    width: 80%;
+    max-width: 800px;
+    
+    border-radius: 10px;
+}
+
+.seccion.seccion.verde p{
+
+ position: relative;
+ top: -300px;   
+ text-align: left;
+ padding: 10px;
+ width: 50% ;
+ margin-left: auto;
+
+}
 
 
+.seccion.verde {
+    background: #a5d6a7;
+    height: 600px;
+}
+.seccion.negro {
+    background: #212121;
+    color: white;
+}
+.seccion.marron {
+    background: #8d6e63;
+    color: white;
+}
+.cartas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.carta {
+    background: white;
+    color: black;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.carta.negro {
+    background: #424242;
+    color: white;
+}
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.images img {
+    width: 300px;
+    border-radius: 10px;
+}
