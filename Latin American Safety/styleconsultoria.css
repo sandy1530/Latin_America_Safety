@@ -41,6 +41,12 @@
             background: rgba(255,255,255, 0.2);
             border-radius: 5px;
         }
+        
+        .dropdown-content a {
+            cursor: pointer;
+        
+
+        }
         /*---Estilo del Submenú---*/
         .dropdown{
             position: relative;
@@ -407,7 +413,7 @@
             background-color: #0f2247; 
             color: white;
             padding: 20px;
-            max-width: 1600px; 
+            max-width: 800px; 
             width: 100%; 
             margin: 50px auto;
             border-radius: 10px; 

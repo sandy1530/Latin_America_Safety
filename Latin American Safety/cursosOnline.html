@@ -9,8 +9,6 @@
  
 </head>
 <body>
-
-
   <header>
     <div class="logo">
       <a href="index.html">
@@ -57,7 +55,6 @@
         </div>
     </nav>
   </header>
-
 </div><br>
  
   <!-- Sección de Cursos Online -->
@@ -93,7 +90,6 @@
   <!-- Tarjetas de Cursos -->
   <section class="container" id="cursos">
     <div class="row">
-      
       <div class="col-md-4">
         <div class="card">
           <div class="card-content">
@@ -105,10 +101,11 @@
             </p>
             <a href="#" class="contenido_2">CONTENIDO</a>
             <br>
-            <a href="#" class="button">INSCRÍBETE</a>
+            <a class="button" onclick="abrirFormulario('formCurso1')">INSCRÍBETE</a>
           </div>
         </div>
       </div>
+  
 
       <div class="col-md-4">
         <div class="card">
@@ -120,7 +117,7 @@
             </p>
             <a href="#" class="contenido_2">CONTENIDO</a>
             <br>
-            <a href="#" class="button">INSCRÍBETE</a>
+            <a class="button" onclick="abrirFormulario('formCurso1')">INSCRÍBETE</a>
           </div>
         </div>
       </div>
@@ -134,7 +131,7 @@
               Aprende a identificar y evaluar peligros en los procesos industriales con la norma IEC 61511.
             </p>
             <a href="#" class="contenido_2">CONTENIDO</a>
-            <a href="#" class="button">INSCRÍBETE</a>
+            <a class="button" onclick="abrirFormulario('formCurso1')">INSCRÍBETE</a>
           </div>
         </div>
       </div>
@@ -148,7 +145,7 @@
               Domina herramientas de análisis de riesgos y mejora la seguridad operativa con la norma IEC 61511.
             </p>
             <a href="#" class="contenido_2">CONTENIDO</a>
-            <a href="#" class="button">INSCRÍBETE</a>
+            <a class="button" onclick="abrirFormulario('formCurso1')">INSCRÍBETE</a>
           </div>
         </div>
       </div>
@@ -162,13 +159,40 @@
               Aprende a clasificar áreas peligrosas en instalaciones industriales con normativas internacionales.
             </p>
             <a href="#" class="contenido_2">CONTENIDO</a>
-            <a href="#" class="button">INSCRÍBETE</a>
+            <a class="button" onclick="abrirFormulario('formCurso1')">INSCRÍBETE</a>
           </div>
         </div>
       </div>
 
     </div>
   </section>
+  <!--Forumario 1-->
+  <div class="contenedor">
+    <div id="formCurso1" class="ForCursos">
+      <div class="Form_contenido">
+      <span class="Cerrar__formulario" onclick="cerrarFormulario()">&times;</span>
+      <h2>INSCRIPCIÓN</h2> 
+      <form id="Registro">
+        <div class="Inicio">
+          <input type="text" id="nombre" placeholder="Nombre" required>
+          <input type="text" id="apellido" placeholder="Apellido" required>
+        </div>
+        <input type="correo" id="gmail" placeholder="Correo Electronico" required>
+        <input type="tel" id="telefono" placeholder="Telefono" required>
+        <div class="checkbox">
+          <input type="checkbox" id="terminos" required>
+          <label for="terminos">Acepto los <a href="#"> Términos y condiciones</a></label>
+        </div>
+        <button type="submit">INSCRÍBIRSE</button>
+      </form>
+      </div>
+    </div>
+    <script src="scripcursos.js"></script>
+  </div>
+  
+
+
+
   <div class="separador"></div>
 
   <!-- Certificación -->
