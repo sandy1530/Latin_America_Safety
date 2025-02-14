@@ -299,6 +299,26 @@ margin-top: 0%;
 .button_c:hover {
 background: #2200b3;
 }
+/*Whatsapp flotante*/
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}
+
 /*Footer*/
 /* General Styles */
 footer {

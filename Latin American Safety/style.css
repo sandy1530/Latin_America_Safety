@@ -283,6 +283,26 @@ body {
   display: flex;
   justify-content: center; 
 }
+/*Whatsapp flotante*/
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}
+
 
 /* Formulario  */
 
@@ -297,7 +317,7 @@ body {
 
 /* Contenedor del formulario con el degradado */
 .Form_contenido {
-  background: linear-gradient(to bottom, #6a11cb, #2575fc); /* Aplicado solo al formulario */
+  background: linear-gradient(to bottom, #2649e2ec, #05265e); /* Aplicado solo al formulario */
   padding: 20px;
   border-radius: 15px;
   width: 350px;
@@ -368,7 +388,7 @@ body {
 .Form_contenido button {
   width: 100%;
   padding: 10px;
-  background: linear-gradient(to right, #00c6ff, #0072ff);
+  background: linear-gradient(to bottom, #2649e2ec, #05265e);
   border: none;
   border-radius: 40px;
   color: white;
@@ -379,7 +399,7 @@ body {
 }
 
 .Form_contenido button:hover {
-  background: linear-gradient(to right, #0072ff, #00c6ff);
+  background: linear-gradient(to bottom, #2649e2ec, #05265e);
 }
 .Cerrar__formulario {
   font-size: 30px;  

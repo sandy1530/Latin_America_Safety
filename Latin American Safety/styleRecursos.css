@@ -99,6 +99,11 @@
     padding: 50px 0;
     margin-top: 60px; 
   }
+  .contenedor_color{
+    background-color: #050000; /* Color gris claro */
+    padding: 90px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+  }
   .contenido {
     display: flex;
     align-items: center;
@@ -111,10 +116,14 @@
     width: 35%;
     text-align: left;
   }
+  .contenedor_color .color1 {
+    color: #e7e0e0;
+}
+
   .contenido-texto p {
-    color: #000000;
+    color: #070606;
   }
-  
+
   .titulo {
     color: #c59100;
     font-size: 100px;
