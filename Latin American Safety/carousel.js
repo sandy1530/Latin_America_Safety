@@ -99,28 +99,35 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //Enviar mensaje de WhatsApp
 function enviarWhatsApp() {
-  // Obtener valores del formulario
-  let nombre = document.getElementById("nombre").value;
-  let email = document.getElementById("email").value;
-  let telefono = document.getElementById("telefono").value || "No proporcionado";
-  let consulta = document.getElementById("consulta").value;
+    // Obtener valores del formulario
+    let nombre = document.getElementById("nombre").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let telefono = document.getElementById("telefono").value.trim() || "No proporcionado";
+    let consulta = document.getElementById("consulta").value.trim();
 
-  // Número de WhatsApp de la empresa 
-  let numeroWhatsApp = "933611593";  
+    // Validar campos obligatorios
+    if (nombre === "" || email === "" || consulta === "") {
+        alert("Por favor, completa todos los campos obligatorios.");
+        return;
+    }
 
-  // Crear el mensaje
-  let mensaje = `Hola, quiero hacer una consulta: %0A%0A` +
-                `👤 *Nombre:* ${nombre} %0A` +
-                `📧 *Email:* ${email} %0A` +
-                `📞 *Teléfono:* ${telefono} %0A` +
-                `💬 *Consulta:* ${consulta} %0A%0A` +
-                `¡Gracias!`;
+    // Número de WhatsApp de la empresa
+    let numeroWhatsApp = "933611593";  
 
-  // Generar el enlace de WhatsApp
-  let url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
+    // Crear el mensaje
+    let mensaje = `Hola, quiero hacer una consulta: %0A%0A` +
+                  `👤 *Nombre:* ${nombre} %0A` +
+                  `📧 *Email:* ${email} %0A` +
+                  `📞 *Teléfono:* ${telefono} %0A` +
+                  `💬 *Consulta:* ${consulta} %0A%0A` +
+                  `¡Gracias!`;
 
-  // Abrir WhatsApp
-  window.open(url, "_blank");
+    // Generar el enlace de WhatsApp
+    let url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
+
+    // Abrir WhatsApp
+    window.open(url, "_blank");
 }
+
 
 
