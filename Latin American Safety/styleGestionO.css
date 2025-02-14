@@ -287,7 +287,7 @@ border-radius: 5px;
 
 /* Botón */
 .button_c {
-background: #3400ff;
+background: #2203a1;
 color: white;
 border: none;
 padding: 10px;
@@ -297,7 +297,7 @@ width: 60%;
 margin-top: 0%;
 }
 .button_c:hover {
-background: #2200b3;
+background: #2f07e0;
 }
 /*Whatsapp flotante*/
 .whatsapp-float {

@@ -258,13 +258,16 @@ body {
     padding: 10px;
     width: 90%;
     color: var(--color-secundario);
-    background: #3400ff;
+    background: #2203a1;
     color: var(col);
     text-decoration: none;
     font-size: 14px;
     border-radius: 5px;
     font-weight: bold;
     margin-top: 10px;
+}
+.button:hover {
+  background: #2f07e0;
 }
 
 .container{
