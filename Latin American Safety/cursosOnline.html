@@ -58,7 +58,7 @@
 </div><br>
  
   <!-- Sección de Cursos Online -->
-  <section id="cursos-online" class="cursos-containers">
+  <section id="cursos-online" class="cursos-container">
     <div class="cursos-texto">
       <h1 class="presentacion-contenido__titulo"> 
         <span class="aprende">Aprende 100%</span>
@@ -101,11 +101,10 @@
             </p>
             <a href="#" class="contenido_2">CONTENIDO</a>
             <br>
-            <a class="button" onclick="abrirFormulario('formCurso1')">INSCRÍBETE</a>
+            <a href="#" class="button" onclick="abrirFormulario('formCurso1')">INSCRÍBETE</a>
           </div>
         </div>
       </div>
-  
 
       <div class="col-md-4">
         <div class="card">
@@ -117,7 +116,7 @@
             </p>
             <a href="#" class="contenido_2">CONTENIDO</a>
             <br>
-            <a class="button" onclick="abrirFormulario('formCurso1')">INSCRÍBETE</a>
+            <a href="#" class="button" onclick="abrirFormulario('formCurso2')">INSCRÍBETE</a>
           </div>
         </div>
       </div>
@@ -131,7 +130,7 @@
               Aprende a identificar y evaluar peligros en los procesos industriales con la norma IEC 61511.
             </p>
             <a href="#" class="contenido_2">CONTENIDO</a>
-            <a class="button" onclick="abrirFormulario('formCurso1')">INSCRÍBETE</a>
+            <a href="#" class="button" onclick="abrirFormulario('formCurso3')">INSCRÍBETE</a>
           </div>
         </div>
       </div>
@@ -145,7 +144,7 @@
               Domina herramientas de análisis de riesgos y mejora la seguridad operativa con la norma IEC 61511.
             </p>
             <a href="#" class="contenido_2">CONTENIDO</a>
-            <a class="button" onclick="abrirFormulario('formCurso1')">INSCRÍBETE</a>
+            <a href="#" class="button" onclick="abrirFormulario('formCurso4')">INSCRÍBETE</a>
           </div>
         </div>
       </div>
@@ -159,19 +158,103 @@
               Aprende a clasificar áreas peligrosas en instalaciones industriales con normativas internacionales.
             </p>
             <a href="#" class="contenido_2">CONTENIDO</a>
-            <a class="button" onclick="abrirFormulario('formCurso1')">INSCRÍBETE</a>
+            <a href="#" class="button" onclick="abrirFormulario('formCurso4')">INSCRÍBETE</a>
           </div>
         </div>
       </div>
-
+      <div class="separador_02"></div>
     </div>
   </section>
   <!--Forumario 1-->
   <div class="contenedor">
     <div id="formCurso1" class="ForCursos">
       <div class="Form_contenido">
-      <span class="Cerrar__formulario" onclick="cerrarFormulario()">&times;</span>
-      <h2>INSCRIPCIÓN</h2> 
+      <span class="Cerrar__formulario" onclick="cerrarFormulario('formCurso1')">&times;</span>
+      <h2>ATMÓSFERAS EXPLOSIVAS</h2> 
+      <form id="Registro">
+        <div class="Inicio">
+          <input type="text" id="nombre" placeholder="Nombre" required>
+          <input type="text" id="apellido" placeholder="Apellido" required>
+        </div>
+        <input type="correo" id="gmail" placeholder="Correo Electronico" required>
+        <input type="tel" id="telefono" placeholder="Telefono" required>
+        <div class="checkbox">
+          <input type="checkbox" id="terminos" required>
+          <label for="terminos">Acepto los <a href="#"> Términos y condiciones</a></label>
+        </div>
+        <button type="submit">INSCRÍBIRSE</button>
+      </form>
+      </div>
+    </div>
+    <!--Forumario 2-->
+  <div class="contenedor">
+    <div id="formCurso2" class="ForCursos">
+      <div class="Form_contenido">
+        <span class="Cerrar__formulario" onclick="cerrarFormulario('formCurso2')">&times;</span>
+      <h2>SEGURIDAD Y SALUD</h2> 
+      <form id="Registro">
+        <div class="Inicio">
+          <input type="text" id="nombre" placeholder="Nombre" required>
+          <input type="text" id="apellido" placeholder="Apellido" required>
+        </div>
+        <input type="correo" id="gmail" placeholder="Correo Electronico" required>
+        <input type="tel" id="telefono" placeholder="Telefono" required>
+        <div class="checkbox">
+          <input type="checkbox" id="terminos" required>
+          <label for="terminos">Acepto los <a href="#"> Términos y condiciones</a></label>
+        </div>
+        <button type="submit">INSCRÍBIRSE</button>
+      </form>
+      </div>
+    </div>
+    <!--Forumario 3-->
+  <div class="contenedor">
+    <div id="formCurso3" class="ForCursos">
+      <div class="Form_contenido">
+        <span class="Cerrar__formulario" onclick="cerrarFormulario('formCurso3')">&times;</span>
+      <h2>SEGURIDAD FUNCIONAL Y SISTEMAS INSTRUMENTADOS</h2> 
+      <form id="Registro">
+        <div class="Inicio">
+          <input type="text" id="nombre" placeholder="Nombre" required>
+          <input type="text" id="apellido" placeholder="Apellido" required>
+        </div>
+        <input type="correo" id="gmail" placeholder="Correo Electronico" required>
+        <input type="tel" id="telefono" placeholder="Telefono" required>
+        <div class="checkbox">
+          <input type="checkbox" id="terminos" required>
+          <label for="terminos">Acepto los <a href="#"> Términos y condiciones</a></label>
+        </div>
+        <button type="submit">INSCRÍBIRSE</button>
+      </form>
+      </div>
+    </div>
+  <!--Forumario 4-->
+  <div class="contenedor">
+    <div id="formCurso4" class="ForCursos">
+      <div class="Form_contenido">
+        <span class="Cerrar__formulario" onclick="cerrarFormulario('formCurso4')">&times;</span>
+      <h2>SEGURIDAD FUNCIONAL EN INDUSTRIA DE PROCESOS</h2> 
+      <form id="Registro">
+        <div class="Inicio">
+          <input type="text" id="nombre" placeholder="Nombre" required>
+          <input type="text" id="apellido" placeholder="Apellido" required>
+        </div>
+        <input type="correo" id="gmail" placeholder="Correo Electronico" required>
+        <input type="tel" id="telefono" placeholder="Telefono" required>
+        <div class="checkbox">
+          <input type="checkbox" id="terminos" required>
+          <label for="terminos">Acepto los <a href="#"> Términos y condiciones</a></label>
+        </div>
+        <button type="submit">INSCRÍBIRSE</button>
+      </form>
+      </div>
+    </div>
+    <!--Forumario 5-->
+  <div class="contenedor">
+    <div id="formCurso5" class="ForCursos">
+      <div class="Form_contenido">
+      <span class="Cerrar__formulario" onclick="cerrarFormulario('formCurso5')">&times;</span>
+      <h2>CLASIFICACIÓN DE ATMÓSFERAS PELIGROSAS</h2> 
       <form id="Registro">
         <div class="Inicio">
           <input type="text" id="nombre" placeholder="Nombre" required>
@@ -189,12 +272,7 @@
     </div>
     <script src="scripcursos.js"></script>
   </div>
-  
-
-
-
-  <div class="separador"></div>
-
+  <div class="separador_02"></div>
   <!-- Certificación -->
   <section class="container">
     <div class="contenedor_certificacion">
@@ -203,76 +281,78 @@
       <a href="#" class="button">PREVENCIÓN DE RIESGOS LABORALES</a>
       <a href="#" class="button">MANTENIMIENTO INDUSTRIAL</a>
     </div>
-  </section>
-  <footer>
-    <div class="footer-container">
-      <div class="footer-content">
-        <!-- Logo -->
-        <div class="footer-logo">
-          <img src="images/LogoEmpresasinfondo.png" alt="Latin American Safety" />
-        </div>
-        <!-- Secciones -->
-        <div class="footer-links">
-          <div class="column">
-            <h4>INICIO</h4>
-            <ul>
-              <li><a href="#">Cursos Nuevos</a></li>
-              <li><a href="#">Quiénes Somos</a></li>
-              <li><a href="#">Ofrecemos</a></li>
-              <li><a href="#">Sectores a los que nos dirigimos</a></li>
-              <li><a href="#">Contáctanos</a></li>
-            </ul>
-          </div>
-          <div class="column">
-            <h4>CONSULTORÍA</h4>
-            <ul>
-              <li><a href="#">Gestión Estratégica de Riesgos</a></li>
-              <li><a href="#">Seguridad de Procesos</a></li>
-              <li><a href="#">Consultoría Ambiental</a></li>
-            </ul>
-          </div>
-          <div class="column">
-            <h4>GESTIÓN Y OPERACIONES AMBIENTALES</h4>
-            <ul>
-              <li><a href="#">Ofrecemos</a></li>
-            </ul>
-          </div>
-          <div class="column">
-            <h4>RECURSOS</h4>
-            <ul>
-              <li><a href="#">Video</a></li>
-              <li><a href="#">Ikigai</a></li>
-            </ul>
-          </div>
-          <div class="column">
-            <h4>CURSOS ONLINE</h4>
-            <ul>
-              <li><a href="#">Cursos SST</a></li>
-              <li><a href="#">Certificación de la Competencia Laboral</a></li>
-            </ul>
-          </div>
-        </div>
+  </section>  
+</section>
+<footer>
+  <div class="footer-container">
+    <div class="footer-content">
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="images/LogoEmpresasinfondo.png" alt="Latin American Safety" />
       </div>
-      <!-- Redes Sociales -->
-      <div class="footer-social">
-        <hr class="line" />
-        <div class="social-icons">
-          <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
-          <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
-          <a href="#"><img src="tiktok-icon.png" alt="TikTok" /></a>
-          <a href="#"><img src="youtube-icon.png" alt="YouTube" /></a>
-          <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" /></a>
+      <!-- Secciones -->
+      <div class="footer-links">
+        <div class="column">
+          <h4>INICIO</h4>
+          <ul>
+            <li><a href="#">Cursos Nuevos</a></li>
+            <li><a href="#">Quiénes Somos</a></li>
+            <li><a href="#">Ofrecemos</a></li>
+            <li><a href="#">Sectores a los que nos dirigimos</a></li>
+            <li><a href="#">Contáctanos</a></li>
+          </ul>
         </div>
-        <hr class="line" />
-      </div>
-      <!-- Copyright -->
-      <div class="footer-bottom">
-        <p>&copy; 2025 Latin American Safety E.I.R.L.</p>
+        <div class="column">
+          <h4>CONSULTORÍA</h4>
+          <ul>
+            <li><a href="#">Gestión Estratégica de Riesgos</a></li>
+            <li><a href="#">Seguridad de Procesos</a></li>
+            <li><a href="#">Consultoría Ambiental</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>GESTIÓN Y OPERACIONES AMBIENTALES</h4>
+          <ul>
+            <li><a href="#">Ofrecemos</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>RECURSOS</h4>
+          <ul>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Ikigai</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>CURSOS ONLINE</h4>
+          <ul>
+            <li><a href="#">Cursos SST</a></li>
+            <li><a href="#">Certificación de la Competencia Laboral</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </footer>
+    <!-- Redes Sociales -->
+    <div class="footer-social">
+      <hr class="line" />
+      <div class="social-icons">
+        <a href="#"><img src="images/Facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="images/tiktok.png" alt="TikTok" /></a>
+        <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
+        <a href="#"><img src="images/icons8-linkedin 1.png" alt="LinkedIn" /></a>
+      </div>
+      <hr class="line" />
+    </div>
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Latin American Safety E.I.R.L.</p>
+    </div>
+  </div>
+</footer>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   <script src="bootstrap/js/bootstrap.min.js" ></script>
-   <script src="scripcursos.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js" ></script>
+  <script src="scripcursos.js"></script>
 </body>
 </html>

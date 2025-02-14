@@ -253,8 +253,6 @@ body {
     text-align: left;
 
 }
-
-
 .button {
     display: inline-block;
     padding: 10px;
@@ -388,13 +386,16 @@ body {
   font-weight: bold; 
   cursor: pointer;   
 }
-
+.contenedor_certificacion {
+  position: absolute;
+  top: -220px; /* Ajusta según sea necesario */
+  left: 0;
+  right: 0;
+}
 
 
 /*Certificacion*/
-.separador {
-  height: 50px; 
-} 
+
 .contenedor_certificacion {
   position: relative; 
   padding-left: 50px; 
@@ -409,17 +410,17 @@ body {
   height: auto; 
 }
 
-  /*Footer*/
+/*Footer*/
 /* General Styles */
 footer {
-  background-color: #0f2247;
+  background-color: #08094f;
   color: white;
   padding: 20px 0;
   font-family: Arial, sans-serif;
 }
 
 .footer-container {
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
