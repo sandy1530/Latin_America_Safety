@@ -6,6 +6,7 @@ body {
     overflow-x: hidden;
     min-width: 450px;
 }
+
 header {
     display: flex;
     align-items: center;
@@ -18,13 +19,18 @@ header {
     width: 100%;
     z-index: 1000;
 }
+
 .logo {
     max-width: 150px;
 }
+
 .logo img{
+
     max-width: 100%;
     height: auto;
+
 }
+
 nav{
     display: flex;
     gap:25
@@ -170,6 +176,7 @@ font-size: 45px;
     max-width: 1200px; 
     margin: 0 auto; 
     max-width: 70%;
+    height: 1100px;
 }
 
 .servicio-imagen {
@@ -202,10 +209,24 @@ font-size: 45px;
     color: #555;
 }
 
-.servicio-imagen a {
-    color: #e53935;
-    text-decoration: none;
+    .servicio-imagen a {
+        color: #e53935;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+.servicio-imagen button {
+    position: relative;
+    bottom: -15px;
+    background-color: #e53935;
+    color: white;
     font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
 }
 
 .servicio-imagen:hover {
@@ -238,6 +259,7 @@ font-size: 45px;
     max-width: 1200px; 
     margin: 0 auto; 
     max-width: 55%;
+    height: 640 px;
 }
 
 .servicio-imagen1 {
@@ -247,6 +269,19 @@ font-size: 45px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     min-height: 400px;
+}
+
+.servicio-imagen1 button {
+    position: relative;
+    background-color: #e53935;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    bottom: -10px;
 }
 
 .servicio-imagen1 img {
@@ -310,6 +345,18 @@ font-size: 45px;
     height: 150px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
+    
+}
+
+.servicio-imagen2 button {
+    background-color: #e53935;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
     
 }
 

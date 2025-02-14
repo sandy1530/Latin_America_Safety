@@ -97,13 +97,26 @@ body {
 .seccion.seccion.verde p{
 
  position: relative;
- top: -300px;   
+ top: -400px;   
  text-align: left;
  padding: 10px;
  width: 50% ;
  margin-left: auto;
 
 }
+
+.seccion.seccion.verde h2{
+
+    position: relative;
+    top: -400px;   
+    text-align: left;
+    padding: 10px;
+    width: 50% ;
+    margin-left: auto;
+    left: 290px;
+   
+}
+   
 
 
 .seccion.verde {
@@ -113,6 +126,8 @@ body {
 .seccion.negro {
     background: #212121;
     color: white;
+    height: 600px;
+    
 }
 .seccion.marron {
     background: #8d6e63;
@@ -135,6 +150,19 @@ body {
 .carta.negro {
     background: #424242;
     color: white;
+ 
+    
+}
+
+.carta.negro2 {
+    background: #424242;
+    color: white;
+    position: relative;
+    
+}
+.carta.negro3 {
+    background: #424242;
+    color: white;
 }
 .images {
     display: flex;
@@ -146,3 +174,4 @@ body {
     width: 300px;
     border-radius: 10px;
 }
+
