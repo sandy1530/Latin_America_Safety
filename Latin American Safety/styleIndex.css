@@ -178,7 +178,15 @@
     width: 20%;
     margin-bottom: 20px;
   }
-  
+  .button-informacion{
+    display: inline-block;
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
   .slide-button {
     background-color: var(--primary-color);
     color: var(--text-color);
