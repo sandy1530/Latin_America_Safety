@@ -11,11 +11,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
+
 }
 body {
   font-family: 'Arial', sans-serif;
   line-height: 2;
   background-color: #f9f9f9;
+  height: 100%;
 }
 header {
   display: flex;
@@ -79,12 +82,7 @@ nav a:hover{
 .dropdown:hover .dropdown-content{
   display: block;
 }
-footer {
-  background: #0f2247;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-}
+
 
 
 /* Estilos para la sección de cursos */
@@ -263,7 +261,8 @@ footer {
 .container{
   color: #22238A;
   font-family: "Bebas Neue", sans-serif;
-  
+  width: 100%;
+  display: block;
 }
 .card {
   margin-bottom: 50px;
@@ -304,7 +303,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 25vh;
   margin: 0;
 }
 
@@ -413,7 +412,6 @@ footer {
   position: relative; 
   padding-left: 50px; 
   margin: 40px;
-
 }
 .imagen-certificacion {
   position: absolute; 
@@ -421,20 +419,21 @@ footer {
   left: 0; 
   width: 40px; 
   height: auto; 
-}
 
+}
 /*Footer*/
-/* General Styles */
 footer {
-  background-color: #08094f;
+  background-color: var(--header-bg);
   color: white;
   padding: 20px 0;
   font-family: Arial, sans-serif;
+  clear: both; /* Asegura que no haya elementos flotantes al lado */
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 0px 100px;
 }
 
 /* Logo y Secciones */
@@ -446,21 +445,24 @@ footer {
 }
 
 .footer-logo img {
-  max-width: 150px;
+  max-width: 300px;
+  padding: 150px 0px;
 }
 
 /* Secciones */
 .footer-links {
   display: flex;
-  gap: 30px;
+  gap: 100px;
   flex-wrap: wrap;
+  padding: 20px 100px;
 }
 
 .footer-links .column h4 {
-  font-size: 16px;
+  font-size: 26px;
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 
 .footer-links ul {
   list-style: none;
@@ -474,13 +476,16 @@ footer {
 .footer-links a {
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
-}
 
+.footer-links a:hover,
+.footer-links a:focus {
+  color: #ffd700; /* Cambia a un tono amarillo dorado en hover */
+  text-decoration: none;
+}
 /* Redes Sociales */
 .footer-social {
   text-align: center;
@@ -500,19 +505,49 @@ footer {
 }
 
 .social-icons a img {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+.social-icons a:hover img {
+  transform: scale(1.2); /* Efecto de zoom en iconos de redes */
 }
 
 /* Copyright */
 .footer-bottom {
   text-align: right;
-  font-size: 12px;
+  font-size: 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 10px;
+  margin-top: 20px;
 }
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
 
+  .footer-links .column h4 {
+    font-size: 22px;
+  }
+
+  .footer-links a {
+    font-size: 18px;
+  }
+
+  .footer-logo img {
+    max-width: 200px; /* Reduce el tamaño del logo en pantallas pequeñas */
+  }
+  .footer-bottom{
+    text-align: center;
+  }
+}
 
 
 
