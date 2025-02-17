@@ -1,7 +1,20 @@
+:root {
+  --primary-color: #a10303;
+  --secondary-color: #000000;
+  --text-color: #ffffff;
+  --font-family: "Montserrat-Bold", sans-serif;
+  --font-size-large: 60px;
+  --font-size-medium: 48px;
+  --font-size-small: 24px;
+  --header-bg:#08094f;
+  --button-hover:#800000;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
   }
   body {
     font-family: 'Arial', sans-serif;
@@ -70,25 +83,11 @@
   .dropdown:hover .dropdown-content{
     display: block;
   }
-  
-  :root {
-    --primary-color: #a10303;
-    --secondary-color: #000000;
-    --text-color: #ffffff;
-    --font-family: "Montserrat-Bold", sans-serif;
-    --font-size-large: 60px;
-    --font-size-medium: 48px;
-    --font-size-small: 24px;
-    --header-bg:#08094f;
-    --button-hover:#800000;
-  }
-  
   .carousel {
     width: 100%;
     overflow: hidden;
     position: relative;
   }
-  
   .carousel-container {
     display: flex;
     width: 100%; 

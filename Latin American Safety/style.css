@@ -1,9 +1,11 @@
 /* Estilos para la sección de Cursos Online */
-:root{
-  --color-primario:#f1b819;
-  --color-secundario:#f5f5f5;
-  --fuente-monserrat:'Montserrat',sans serif;
-  --fuente-krona:'Krona',sans serif;
+:root {
+  --color-primario: #f1b819;
+  --color-secundario: #ffffff;
+  --color-fondo: #08094f;
+  --fuente-principal: 'Montserrat', sans-serif;
+  --header-bg:#08094f;
+
 }
 * {
   margin: 0;
@@ -19,8 +21,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 30px;
-  background-color: #0f2247;
+  padding: 5px 100px;
+  background-color: var(--header-bg);
   position: fixed;
   top:0;
   left: 0;
@@ -28,7 +30,7 @@ header {
   z-index: 1000;
 }
 .logo {
-  max-width: 150px;
+  max-width: 300px;
 }
 .logo img{
   max-width: 100%;
@@ -36,15 +38,15 @@ header {
 }
 nav{
   display: flex;
-  gap:25
+  gap:25px;
 }
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 16 px;
+  font-size: 18px;
   font-weight: bold;
   padding: 10px 15px;
-  transition: 0.3;
+  transition: 0.3s;
 }
 nav a:hover{
   background: rgba(255,255,255, 0.2);
@@ -60,15 +62,16 @@ nav a:hover{
   top: 100%;
   left: 0;
   background: white;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 10px;
   width: 200px;
+  border-radius: 7px;
 }
 .dropdown-content a{
   color: black;
   padding: 10px 15px;
   display: block;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
 }
 .dropdown-content a:hover{
   background: #f5f5f5;
@@ -83,12 +86,7 @@ footer {
   padding: 1rem 0;
 }
 
-:root {
-  --color-primario: #f1b819;
-  --color-secundario: #ffffff;
-  --color-fondo: #121474;
-  --fuente-principal: 'Montserrat', sans-serif;
-}
+
 /* Estilos para la sección de cursos */
 .cursos-container {
   display: flex;
@@ -180,15 +178,7 @@ footer {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-body {
-    background-color: var(--color-secundario);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-    padding: 20px;
-}
+
 .container {
     display: flex;
     flex-wrap: wrap;

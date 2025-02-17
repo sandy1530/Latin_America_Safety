@@ -1,64 +1,82 @@
-header {
+:root {
+    --primary-color: #a10303;
+    --secondary-color: #000000;
+    --text-color: #ffffff;
+    --font-family: "Montserrat-Bold", sans-serif;
+    --font-size-large: 60px;
+    --font-size-medium: 48px;
+    --font-size-small: 24px;
+    --header-bg:#08094f;
+    --button-hover:#800000;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 30px;
-    background-color: #0f2247;
+    padding: 5px 100px;
+    background-color: var(--header-bg);
     position: fixed;
     top:0;
     left: 0;
     width: 100%;
     z-index: 1000;
-}
-.logo {
-    max-width: 150px;
-}
-.logo img{
+  }
+  .logo {
+    max-width: 300px;
+  }
+  .logo img{
     max-width: 100%;
     height: auto;
-}
-nav{
+  }
+  nav{
     display: flex;
-    gap:25
-}
-nav a {
+    gap:25px;
+  }
+  nav a {
     color: white;
     text-decoration: none;
-    font-size: 16 px;
+    font-size: 18px;
     font-weight: bold;
     padding: 10px 15px;
-    transition: 0.3;
-}
-nav a:hover{
+    transition: 0.3s;
+  }
+  nav a:hover{
     background: rgba(255,255,255, 0.2);
     border-radius: 5px;
-}
-/*---Estilo del Submenú---*/
-.dropdown{
+  }
+  /*---Estilo del Submenú---*/
+  .dropdown{
     position: relative;
-}
-.dropdown-content{
+  }
+  .dropdown-content{
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background: white;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 10px;
     width: 200px;
-}
-.dropdown-content a{
+    border-radius: 7px;
+  }
+  .dropdown-content a{
     color: black;
     padding: 10px 15px;
     display: block;
     text-decoration: none;
-    font-size: 14px;
-}
-.dropdown-content a:hover{
+    font-size: 18px;
+  }
+  .dropdown-content a:hover{
     background: #f5f5f5;
-}
-.dropdown:hover .dropdown-content{
+  }
+  .dropdown:hover .dropdown-content{
     display: block;
-}
+  }
 footer {
     background: #0f2247;
     color: white;
@@ -67,9 +85,11 @@ footer {
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+    font-family: 'Arial', sans-serif;
+    line-height: 2;
+    background-color: #f9f9f9;
+    
+  }
 .header {
     background: #2e7d32;
     padding: 20px;
