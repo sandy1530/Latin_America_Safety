@@ -60,3 +60,4 @@ function cerrarFormulario(id) {
         formulario.style.display = "none";
     }
 }
+
