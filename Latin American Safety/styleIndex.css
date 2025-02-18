@@ -398,6 +398,7 @@
     border-radius: 50%;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .boton-circular:hover {
