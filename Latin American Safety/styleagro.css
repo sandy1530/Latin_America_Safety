@@ -128,7 +128,7 @@ body {
     padding: 10px;
     width: 50% ;
     margin-left: auto;
-    left: 290px;
+    left: 0px;
    
 }
    
@@ -163,6 +163,11 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .carta.negro {
+
+    position: relative;
+    right: 200px;
+    top: 100px;
+    transform: scale(1.4);
     background: #424242;
     color: white;
  
@@ -170,12 +175,19 @@ body {
 }
 
 .carta.negro2 {
+  position: relative;
+  top: 100px;
+    transform: scale(1.4);
     background: #424242;
     color: white;
     position: relative;
     
 }
 .carta.negro3 {
+ position: relative;
+  top: 100px;
+  left: 200px;
+    transform: scale(1.4);
     background: #424242;
     color: white;
 }
