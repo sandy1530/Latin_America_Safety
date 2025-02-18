@@ -410,8 +410,10 @@ nav a:hover{
 
 .contenedor_certificacion {
   position: relative; 
+  left: 450px;
   padding-left: 50px; 
   margin: 40px;
+  transform: scale(1.6);
 }
 .imagen-certificacion {
   position: absolute; 
@@ -421,6 +423,68 @@ nav a:hover{
   height: auto; 
 
 }
+
+.contenedor_certificacion1 img {
+ 
+  position: relative;
+  transform: scale(0.6);
+  right: 200px;
+  bottom: 200px;
+
+}
+
+.contenedor_certificacion1 ul{
+
+position: relative;
+
+left: 850px;
+bottom: 600px;
+transform: scale(1.2);
+
+
+}
+
+.contenedor_certificacion1 h3{
+
+  position: relative;
+  
+  left: 850px;
+  bottom: 650px;
+  transform: scale(1.2);
+  
+  
+  }
+
+  .contenedor_certificacion2 img {
+ 
+    position: relative;
+    transform: scale(0.6);
+    left: 600px;
+    bottom: 400px;
+  
+  }
+  
+  .contenedor_certificacion2 ul{
+  
+  position: relative;
+  
+  left: 50px;
+  bottom: 800px;
+  transform: scale(1.2);
+  
+  
+  }
+  
+  .contenedor_certificacion2 h3{
+  
+    position: relative;
+    
+    left: 60px;
+    bottom: 850px;
+    transform: scale(1.2);
+    
+    
+    }
 /*Footer*/
 footer {
   background-color: var(--header-bg);
