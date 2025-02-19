@@ -498,12 +498,12 @@ transform: scale(1.2);
     
     }
 /*Footer*/
+/* General Styles */
 footer {
   background-color: var(--header-bg);
   color: white;
   padding: 20px 0;
   font-family: Arial, sans-serif;
-  clear: both; /* Asegura que no haya elementos flotantes al lado */
 }
 
 .footer-container {
@@ -528,13 +528,13 @@ footer {
 /* Secciones */
 .footer-links {
   display: flex;
-  gap: 100px;
+  gap: 50px;
   flex-wrap: wrap;
   padding: 20px 100px;
 }
 
 .footer-links .column h4 {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -552,7 +552,7 @@ footer {
 .footer-links a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   transition: color 0.3s ease-in-out;
 }
 
