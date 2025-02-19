@@ -112,14 +112,14 @@ function enviarWhatsApp() {
     }
 
     // Número de WhatsApp de la empresa
-    let numeroWhatsApp = "933611593";  
+    let numeroWhatsApp = "922201430";  
 
     // Crear el mensaje
     let mensaje = `Hola, quiero hacer una consulta: %0A%0A` +
-                  `👤 *Nombre:* ${nombre} %0A` +
-                  `📧 *Email:* ${email} %0A` +
-                  `📞 *Teléfono:* ${telefono} %0A` +
-                  `💬 *Consulta:* ${consulta} %0A%0A` +
+                  `*Nombre:* ${nombre} %0A` +
+                  `*Email:* ${email} %0A` +
+                  `*Teléfono:* ${telefono} %0A` +
+                  `*Consulta:* ${consulta} %0A%0A` +
                   `¡Gracias!`;
 
     // Generar el enlace de WhatsApp
