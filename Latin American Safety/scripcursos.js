@@ -21,7 +21,7 @@ function enviarWhatsApp(event) {
     }
 
     // Número de WhatsApp de la empresa
-    let numeroWhatsApp = "+51997750342";  
+    let numeroWhatsApp = "+51933611593";  
 
     // Crear el mensaje
     let mensaje = `Hola, quiero inscribirme en el curso: *${curso}* %0A%0A` +
