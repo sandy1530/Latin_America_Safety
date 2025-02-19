@@ -185,7 +185,10 @@ nav a:hover{
     align-items: flex-start;
     gap: 20px;
     max-width: 900px;
+   
 }
+
+
 .card {
     background: var(--color-secundario);
     border-radius: 10px;
@@ -261,7 +264,7 @@ nav a:hover{
 
 .contenedor-tarjetas{
 
-  height: 1150px;
+  height: 900px;
 }
 
 .container{
@@ -404,99 +407,123 @@ nav a:hover{
   font-weight: bold; 
   cursor: pointer;   
 }
-.contenedor_certificacion {
-  position: absolute;
-  top: -220px; /* Ajusta según sea necesario */
-  left: 0;
-  right: 0;
-  
-}
 
 
 /*Certificacion*/
 
 .container{
 
-  height: 1300px;
+  height: 1400px;
 }
 
-.contenedor_certificacion {
-  position: relative; 
-  left: 450px;
-  padding-left: 50px; 
-  margin: 40px;
-  transform: scale(1.6);
-}
-.imagen-certificacion {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  width: 40px; 
-  height: auto; 
 
+.contenedor_certificacion{
+
+text-align: center;
+height: 250px;
 }
 
-.contenedor_certificacion1 img {
- 
-  position: relative;
-  transform: scale(0.6);
-  right: 200px;
-  bottom: 200px;
+.contenedor_certificacion1{
 
-}
-
-.contenedor_certificacion1 ul{
-
-position: relative;
-
-left: 850px;
-bottom: 600px;
-transform: scale(1.2);
-
-
-}
-
-.contenedor_certificacion1 h3{
-
-  position: relative;
+  display: flex;
   
-  left: 850px;
-  bottom: 650px;
-  transform: scale(1.2);
+  min-height: 200px; 
+
+  gap: 40px;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.contenedor_certificacion1 img{
+  display: block;
   
-  
+  margin: 0 auto; 
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+
+}
+
+
+.contenedor_certificacion2 {
+  display: flex;
+  min-height: 200px;
+  gap: 40px;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor_certificacion2 img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.texto_certificacion2 {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 1024px) {
+  .container {
+    min-height: auto; /* Permite que la altura se ajuste mejor en pantallas medianas */
   }
 
+  .contenedor_certificacion1,
+  .contenedor_certificacion2 {
+    gap: 30px; /* Reducir espacio entre elementos en pantallas medianas */
+    padding: 30px;
+  }
+
+  .contenedor_certificacion1 img,
   .contenedor_certificacion2 img {
- 
-    position: relative;
-    transform: scale(0.6);
-    left: 600px;
-    bottom: 400px;
-  
+    width: 70%; /* Ajuste en pantallas medianas */
   }
-  
-  .contenedor_certificacion2 ul{
-  
-  position: relative;
-  
-  left: 50px;
-  bottom: 800px;
-  transform: scale(1.2);
-  
-  
+}
+
+@media (max-width: 768px) {
+  .contenedor_certificacion1,
+  .contenedor_certificacion2 {
+    flex-direction: column; /* Apilar los elementos en pantallas pequeñas */
+    gap: 20px;
+    padding: 20px;
   }
-  
-  .contenedor_certificacion2 h3{
-  
-    position: relative;
-    
-    left: 60px;
-    bottom: 850px;
-    transform: scale(1.2);
-    
-    
-    }
+
+  .contenedor_certificacion1 img,
+  .contenedor_certificacion2 img {
+    width: 90%; /* Ajustar imágenes en móviles */
+  }
+
+  .texto_certificacion2 {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor_certificacion1 img,
+  .contenedor_certificacion2 img {
+    width: 100%; /* Usar el 100% del ancho disponible en móviles pequeños */
+  }
+
+  .contenedor_certificacion1,
+  .contenedor_certificacion2 {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .texto_certificacion2 {
+    font-size: 14px; /* Reducir el tamaño del texto para pantallas pequeñas */
+  }
+}
+
+
 /*Footer*/
 /* General Styles */
 footer {
