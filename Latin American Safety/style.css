@@ -19,6 +19,7 @@ body {
   line-height: 2;
   background-color: #f9f9f9;
   height: 100%;
+  overflow-x: hidden ;
 }
 header {
   display: flex;
@@ -258,6 +259,11 @@ nav a:hover{
   background: #2f07e0;
 }
 
+.contenedor-tarjetas{
+
+  height: 1150px;
+}
+
 .container{
   color: #22238A;
   font-family: "Bebas Neue", sans-serif;
@@ -403,10 +409,16 @@ nav a:hover{
   top: -220px; /* Ajusta según sea necesario */
   left: 0;
   right: 0;
+  
 }
 
 
 /*Certificacion*/
+
+.container{
+
+  height: 1300px;
+}
 
 .contenedor_certificacion {
   position: relative; 

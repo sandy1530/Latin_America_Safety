@@ -83,16 +83,34 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 2;
     background-color: #f9f9f9;
-    
+    overflow-x: hidden; 
+    width: 100%;
   }
 .header {
-    background: #2e7d32;
-    padding: 20px;
-    color: white;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
+  background: #2e7d32;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  width: 100%;
+
+    
 }
+
+
+
+.texto-verde{
+
+  margin-bottom: 0px;
+  margin-right: -200px;
+  width: 50%;
+  text-align: left;
+ 
+   
+  gap: 10px; 
+}
+
 .seccion {
     padding: 40px;
     text-align: center;
@@ -100,60 +118,107 @@ body {
 }
 .seccion img {
 
-    position: relative;
-    padding: 50px;
-    right: 500px;
-    width: 80%;
-    max-width: 800px;
-    
-    border-radius: 10px;
+
+  display: block;
+  
+  margin: 0 auto; 
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
 }
 
-.seccion.seccion.verde p{
-
- position: relative;
- top: -400px;   
- text-align: left;
- padding: 10px;
- width: 50% ;
- margin-left: auto;
-
+.seccion.verde p, 
+.seccion.verde h2 {
+  width: 50%;
+  text-align: left;
 }
 
-.seccion.seccion.verde h2{
-
-    position: relative;
-    top: -400px;   
-    text-align: left;
-    padding: 10px;
-    width: 50% ;
-    margin-left: auto;
-    left: 0px;
-   
-}
-   
 
 
 .seccion.verde {
-    background: #a5d6a7;
-    height: 600px;
+
+  display: flex;
+  background: #a5d6a7;
+  min-height: 600px; 
+  display: flex;
+  
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
 }
-.seccion.negro {
-    background: #212121;
-    color: white;
-    height: 600px;
-    
+
+
+
+@media (max-width: 768px) {
+  .seccion.verde {
+    flex-direction: column; 
+    text-align: center;
+    gap: 20px;
+  }
+
+  .seccion.verde img {
+    width: 100%; 
+    max-width: 500px;
+  }
+
+  .texto-verde {
+    width: 100%;
+    text-align: center; 
+    margin-right: 0;
+  }
+
+  .seccion.verde p, 
+  .seccion.verde h2 {
+    width: 100%;
+    text-align: center; 
+  }
 }
+
 .seccion.marron {
     background: #8d6e63;
     color: white;
 }
-.cartas {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+
+.seccion.seccion.marron img{
+
+position: relative;
+right:0px;
+transform: scale(2.2);
+margin: 200px;
+padding: 10px;
+
+
+
 }
+
+
+
+.cartas {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 9rem;
+    padding: 0rem;
+    max-width: 100%;
+    
+    margin: 0 auto; 
+    
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: auto;
+    
+    
+}
+@media (max-width: 768px) {
+  .cartas {
+      grid-template-columns: 1fr; 
+      gap: 1rem; 
+  }
+}
+
+
+
 .carta {
     background: white;
     color: black;
@@ -162,44 +227,84 @@ body {
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
+.seccion.negro {
+  display: grid;
+  
+  gap: 40px;
+  background: #212121;
+  color: white;
+  height: 900px;
+
+  
+}
 .carta.negro {
 
-    position: relative;
-    right: 200px;
-    top: 100px;
-    transform: scale(1.4);
+ 
+    transform: scale(1.25);
     background: #424242;
     color: white;
- 
+    width: 500px;
+    height: 230px;
+    font-size: 14px;
+    border: 3px solid white;
     
 }
 
 .carta.negro2 {
-  position: relative;
-  top: 100px;
-    transform: scale(1.4);
+
+    transform: scale(1.25);
     background: #424242;
     color: white;
-    position: relative;
+   
+    width: 500px;
+    height: 230px;
+    font-size: 14px;
+    border: 3px solid white;
     
 }
 .carta.negro3 {
- position: relative;
-  top: 100px;
-  left: 200px;
-    transform: scale(1.4);
+
+    transform: scale(1.25);
+    margin-bottom: 100px;
     background: #424242;
     color: white;
+    width: 500px;
+    height: 230px;
+    font-size: 14px;
+    border: 3px solid white;
+    grid-column: span 2; 
+    justify-self: center; 
+    
 }
-.images {
-    display: flex;
-    justify-content: center;
+@media (max-width: 768px) {
+  .seccion.negro {
+    grid-template-columns: 1fr; 
     gap: 20px;
-    flex-wrap: wrap;
+  }
+
+  .carta.negro, 
+  .carta.negro2, 
+  .carta.negro3 {
+    width: 90%; 
+    max-width: 400px;
+    margin: 0 auto;
+    transform: scale(1); 
+  }
+  .carta.negro3 {
+    grid-column: auto; 
+  }
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .images img {
-    width: 300px;
-    border-radius: 10px;
+  width: 300px;
+  border-radius: 10px;
 }
 
 /*Footer*/
