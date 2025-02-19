@@ -582,7 +582,7 @@ footer {
 /* Secciones */
 .footer-links {
   display: flex;
-  gap: 90px;
+  gap: 50px;
   flex-wrap: wrap;
   padding: 20px 100px;
 }
