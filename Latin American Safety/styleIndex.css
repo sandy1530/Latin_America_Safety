@@ -83,6 +83,7 @@
   .dropdown:hover .dropdown-content{
     display: block;
   }
+  /*Sección imagenes principales*/
   .carousel {
     width: 100%;
     overflow: hidden;
@@ -101,7 +102,8 @@
   
   .slide-image img {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    max-height: 100vh;
     object-fit: cover;
   }
   
@@ -117,74 +119,62 @@
   .slide-fontc{
     display: block; /* Asegura que cada elemento ocupe una línea */
   }
-  .slide-title, .slide-subtitle {
-    margin-bottom: 10px; /* Espacio entre líneas */
+  .slide-title, .slide-subtitle, .slide-titleC {
+    margin-bottom: 1rem; /* Espacio relativo entre líneas */
+    font-family: var(--font-family);
+    font-weight: 700;
+    padding: 1.5rem 1rem; /* Padding relativo */
+    display: inline-block;
   }
   
   .slide-title {
-    font-family: var(--font-family);
-    font-size: var(--font-size-large);
-    font-weight: 700;
+    
+    font-size: 4rem;
     background-color: var(--secondary-color);
-    padding: 35px 25px;
-    display: inline-block;
   }
   
   .slide-subtitle {
-    font-family: var(--font-family);
-    font-size: var(--font-size-large);
-    font-weight: 700;
+    font-size: 4rem;
     color: #000000;
     background-color: #f9f9f9;
-    padding: 35px 25px;
-    display: inline-block;
   }
   .slide-titleC {
-    font-family: var(--font-family);
-    font-size: var(--font-size-medium);
-    font-weight: 700;
+    font-size: 2.5rem;
     background-color: var(--primary-color);
-    padding: 20px 20px;
-    display: inline-block;
+    padding: 1rem 1rem;  
   }
-  .slide-description {
-    font-family: var(--font-family);
-    font-size: var(--font-size-small);
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  .slide-descriptionC {
-    font-family: var(--font-family);
-    font-size: var(--font-size-large);
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  .slide-background {
-    background-color:rgba(0, 0, 0, 0.8);
-  }
-
+  .slide-description,
+  .slide-descriptionC,
   .slide-descriptionCu {
     font-family: var(--font-family);
-    font-size: var(--font-size-large);
     font-weight: 700;
-    margin-bottom: 20px;
-    
-   }
+    margin-bottom: 1.5rem; /* Espacio relativo */
+  }
+  .slide-description {
+    font-size: 1.5rem;
+  }
+  .slide-descriptionC,
+  .slide-descriptionCu {
+    font-size: 3.5rem; /* Tamaño de fuente relativo */
+  }
+  
+  .slide-background {
+    background-color:rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+  }
+
+  
   .rectangule-rojo{
     background-color: var(--primary-color);
-    position: relative;
-    height: 20px;
+    height: 1rem;
     width: 20%;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
   }
   .button-informacion{
     display: inline-block;
     color: white; /* Color del texto */
     text-decoration: none; /* Elimina el subrayado */
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
+    
   }
   .slide-button {
     background-color: var(--primary-color);
@@ -201,6 +191,67 @@
   
   .slide-button:hover {
     background-color: #800000;
+  }
+  @media (max-width: 1440px) {
+    .slide-content {
+      left: 5%; /* Menor margen en pantallas pequeñas */
+      max-width: 90%; /* Más espacio para el contenido */
+    }
+  
+    .slide-title,
+    .slide-subtitle {
+      font-size: 1.5rem; /* Tamaño de fuente más pequeño */
+      padding: 1rem 0.75rem; /* Padding reducido */
+    }
+  
+    .slide-titleC {
+      font-size: 1.25rem; /* Tamaño de fuente más pequeño */
+      padding: 0.75rem 0.5rem; /* Padding reducido */
+    }
+  
+    .slide-description,
+    .slide-descriptionC,
+    .slide-descriptionCu {
+      font-size: 0.875rem; /* Tamaño de fuente más pequeño */
+    }
+  
+    .slide-image img {
+      max-height: 60vh; /* Altura máxima reducida */
+    }
+  
+    .slide-button {
+      font-size: 0.875rem; /* Tamaño de fuente más pequeño */
+      padding: 0.5rem 1rem; /* Padding reducido */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .slide-content {
+      left: 2%; /* Margen mínimo en pantallas muy pequeñas */
+      max-width: 96%; /* Más espacio para el contenido */
+    }
+  
+    .slide-title,
+    .slide-subtitle {
+      font-size: 1.25rem; /* Tamaño de fuente más pequeño */
+      padding: 0.75rem 0.5rem; /* Padding reducido */
+    }
+  
+    .slide-titleC {
+      font-size: 1rem; /* Tamaño de fuente más pequeño */
+      padding: 0.5rem 0.25rem; /* Padding reducido */
+    }
+  
+    .slide-description,
+    .slide-descriptionC,
+    .slide-descriptionCu {
+      font-size: 0.75rem; /* Tamaño de fuente más pequeño */
+    }
+  
+    .slide-button {
+      font-size: 0.75rem; /* Tamaño de fuente más pequeño */
+      padding: 0.5rem 1rem; /* Padding reducido */
+    }
   }
   
   /*cursos nuevos*/
