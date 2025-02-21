@@ -34,9 +34,7 @@
     z-index: 1000;
 
   }
-  .inicio{
-    margin-top: 7rem;
-  }
+  
   .logo {
     max-width: 300px;
   }
@@ -92,6 +90,7 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+    margin-top: 7rem;
   }
   .carousel-container {
     display: flex;
@@ -113,7 +112,7 @@
   
   .slide-content {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 10%;
     transform: translateY(-50%);
     color: var(--text-color);
@@ -191,6 +190,7 @@
     cursor: pointer;
     border-radius: 5px;
     position: relative;
+    margin-top: 1rem;
   }
   
   .slide-button:hover {
