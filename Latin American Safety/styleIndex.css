@@ -32,6 +32,10 @@
     left: 0;
     width: 100%;
     z-index: 1000;
+
+  }
+  .inicio{
+    margin-top: 7rem;
   }
   .logo {
     max-width: 300px;
