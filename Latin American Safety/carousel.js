@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (typeof Swiper !== "undefined") {
         new Swiper(".mySwiper", {
             slidesPerView: 3,
-            spaceBetween: 5,
+            spaceBetween: 0,
             loop: true,
             pagination: {
                 el: ".swiper-pagination",
